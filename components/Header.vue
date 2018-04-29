@@ -1,6 +1,6 @@
 <template lang="html">
   <header>
-    <nuxt-link :to="home.href" @click.native="hideMenu" :title="home.image.title">
+    <nuxt-link :to="home.href" :title="home.image.title">
       <img :src="imgPath(home.image.src)" :alt="home.image.alt" class="avatar">
     </nuxt-link>
 
@@ -13,7 +13,6 @@
         v-for="(link, index) in navigation.links"
         v-if="!link.external"
         :key="index"
-        @click.native="hideMenu"
       >
         {{link.content}}
       </nuxt-link>
@@ -25,12 +24,11 @@
         v-for="(link, index) in navigation.links"
         v-if="link.external"
         :key="index"
-        @click="hideMenu"
       >
         {{link.content}}
       </a>
 
-      <nuxt-link :to="locale.en.href" @click.native="hideMenu" :title="locale.en.title">
+      <nuxt-link :to="locale.en.href" :title="locale.en.title">
         <img :src="imgPath(locale.en.img)" :alt="locale.en.title" class="flag">
       </nuxt-link>
     </nav>
@@ -86,12 +84,12 @@ export default {
             title: "Voir mes services",
             external: false
           },
-          {
-            content: "Références",
-            href: "/work",
-            title: "Découvrez mon travail",
-            external: false
-          },
+          // {
+          //   content: "Références",
+          //   href: "/work",
+          //   title: "Découvrez mon travail",
+          //   external: false
+          // },
           {
             content: "Blog",
             href: "https://blog.quentin-bellanger.com",
@@ -123,10 +121,6 @@ export default {
     toggleMenu () {
       const mobileNav = document.querySelector('.mobile-nav')
       mobileNav.classList.toggle('closed')
-    },
-    hideMenu () {
-      const mobileNav = document.querySelector('.mobile-nav')
-      mobileNav.classList.add('closed')
     }
   }
 }
@@ -145,7 +139,6 @@ header {
 
   img {
     border-radius: $radius;
-    display: block;
 
     &.avatar {
       height: 30px;
@@ -183,10 +176,6 @@ header {
 
       &:hover,
       &:focus {
-        color: $color-main;
-      }
-
-      &.nuxt-link-active {
         color: $color-main;
       }
     }

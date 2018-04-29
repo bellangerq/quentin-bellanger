@@ -55,5 +55,8 @@ module.exports = {
         })
       }
     }
+  },
+  router: {
+    middleware: ['routeGuard']
   }
 }

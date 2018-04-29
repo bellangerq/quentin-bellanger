@@ -49,10 +49,10 @@ export default {
   data() {
     return {
       title: "Vous chercher un développeur freelance pour votre projet web ?",
-      intro: "Voici les différentes types de projets et les services que je propose. Vous trouverez également plus d'information sur ma manière de travailler.",
+      intro: "Voici les différents types de projets et les services que je propose. Vous trouverez également plus d'information sur ma manière de travailler.",
       services: {
         title: "Typologies de projets",
-        intro: "Selon votre projet, vous pouvez avoir besoin de différent type de service. Chaque projet est différent et unique mais voici les principaux exemples de prestations :",
+        intro: "Selon votre projet, vous pouvez avoir besoin de différents types de service. Chaque projet est différent et unique mais voici les principaux exemples de prestations :",
         items: [
           {
             title: "Site vitrine",
@@ -60,7 +60,7 @@ export default {
           },
           {
             title: "Blog",
-            content: "un site dynamique permetant la publication de contenu de manière régulière, la solution parfaite pour une section actualités."
+            content: "un site dynamique permettant la publication de contenu de manière régulière, la solution parfaite pour une section actualités."
           },
           {
             title: "E-commerce",
@@ -74,7 +74,7 @@ export default {
       },
       features: {
         title: "Inclu dans tous les projets",
-        intro: "Quel que soit votre projet, je m'assure de respecter quelques standards du développement web. Ces fonctionnalités ne sont pas optionnelles mais incluses dans votre projet :",
+        intro: "Quel que soit votre projet, je m'assure de respecter les standards du développement web. Ces fonctionnalités ne sont pas optionnelles mais incluses dans votre projet :",
         items: [
           "Version mobile",
           "Référencement (SEO)",

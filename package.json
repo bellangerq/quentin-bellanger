@@ -8,6 +8,7 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
+    "compress": "imageOptim --directory assets/images",
     "generate": "nuxt generate",
     "deploy": "surge dist/ https://quentin-bellanger.com",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",

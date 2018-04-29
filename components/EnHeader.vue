@@ -1,6 +1,6 @@
 <template lang="html">
   <header>
-    <nuxt-link :to="home.href" @click.native="hideMenu" :title="home.image.title">
+    <nuxt-link :to="home.href" :title="home.image.title">
       <img :src="imgPath(home.image.src)" :alt="home.image.alt" class="avatar">
     </nuxt-link>
 
@@ -14,10 +14,9 @@
         v-html="link.content"
         :target="link.target"
         :key="index"
-        @click="hideMenu"
       >
       </a>
-      <nuxt-link :to="locale.fr.href" @click.native="hideMenu" :title="locale.fr.title">
+      <nuxt-link :to="locale.fr.href" :title="locale.fr.title">
         <img :src="imgPath(locale.fr.img)" :alt="locale.fr.title" class="flag">
       </nuxt-link>
     </nav>
@@ -83,10 +82,6 @@ export default {
     toggleMenu () {
       const mobileNav = document.querySelector('.mobile-nav')
       mobileNav.classList.toggle('closed')
-    },
-    hideMenu () {
-      const mobileNav = document.querySelector('.mobile-nav')
-      mobileNav.classList.add('closed')
     }
   }
 }
@@ -143,10 +138,6 @@ header {
 
       &:hover,
       &:focus {
-        color: $color-main;
-      }
-
-      &.nuxt-link-active {
         color: $color-main;
       }
     }

@@ -26,10 +26,6 @@ export default {
   margin: 20px 0 0 0;
   width: 100%;
 
-  img {
-    width: 100%;
-  }
-
   a {
     color: $color-black;
     display: inline-block;
