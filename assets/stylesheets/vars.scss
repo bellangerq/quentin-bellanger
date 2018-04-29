@@ -1,0 +1,22 @@
+// COLORS
+$color-main: #5090ff;
+$color-main-dark: darken($color-main, 5%);
+$color-white: #fff;
+$color-black: #000;
+$color-black-light: lighten($color-black, 60%);
+
+// FONTS
+$font-size-base: 16px;
+$font-family-main: -apple-system,
+  BlinkMacSystemFont,
+  'Segoe UI',
+  Roboto,
+  Helvetica,
+  Arial,
+  sans-serif,
+  'Apple Color Emoji',
+  'Segoe UI Emoji',
+  'Segoe UI Symbol';
+
+// RADIUS
+$radius: 2px;

@@ -1,0 +1,29 @@
+{
+  "name": "quentin-bellanger",
+  "version": "1.0.0",
+  "description": "Nuxt.js project",
+  "author": "Quentin Bellanger <hello@quentin-bellanger.com>",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "deploy": "surge dist/ https://quentin-bellanger.com",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "nuxt": "^1.0.0",
+    "nuxt-i18n": "^2.9.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "node-sass": "^4.8.3",
+    "sass-loader": "^7.0.1"
+  }
+}
