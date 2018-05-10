@@ -31,7 +31,7 @@
     </div>
     <div class="interested">
       <h2>{{ cta.title }}</h2>
-      <p>{{ cta.intro }}</p>
+      <p v-html="cta.intro"></p>
       <a
         :href="cta.link.href"
         :title= "cta.link.title"
@@ -48,8 +48,8 @@ import { mapState } from 'vuex'
 export default {
   data() {
     return {
-      title: "Vous chercher un développeur freelance pour votre projet web ?",
-      intro: "Voici les différents types de projets et les services que je propose. Vous trouverez également plus d'information sur ma manière de travailler.",
+      title: "Vous cherchez un développeur freelance pour votre projet web ?",
+      intro: "Voici les différents types de projets et les services que je propose. Vous trouverez également plus d'informations sur ma façon de travailler.",
       services: {
         title: "Typologies de projets",
         intro: "Selon votre projet, vous pouvez avoir besoin de différents types de service. Chaque projet est différent et unique mais voici les principaux exemples de prestations :",
@@ -64,7 +64,7 @@ export default {
           },
           {
             title: "E-commerce",
-            content: "un site marchand pour migrer votre catalogue de produits existant en version web afin de commencer à vendre sur internet."
+            content: "un site marchand pour exposer votre catalogue de produits sur le web et commencer à vendre sur Internet."
           },
           {
             title: "Landing page",
@@ -73,7 +73,7 @@ export default {
         ]
       },
       features: {
-        title: "Inclu dans tous les projets",
+        title: "Inclus dans tous les projets",
         intro: "Quel que soit votre projet, je m'assure de respecter les standards du développement web. Ces fonctionnalités ne sont pas optionnelles mais incluses dans votre projet :",
         items: [
           "Version mobile",
@@ -90,7 +90,7 @@ export default {
         items: [
           {
             title: "Transparence",
-            content: "je tiens a créer et garder une relation de confiance tout au long de la vie du projet (et même après !) afin d'être totalement honnête et transparent sur les choix pris dans la réalisation de ce dernier."
+            content: "je tiens à créer et garder une relation de confiance tout au long de la vie du projet (et même après !) afin d'être totalement honnête et transparent sur les choix pris dans la réalisation de ce dernier."
           },
           {
             title: "Empathie",
@@ -102,13 +102,13 @@ export default {
           },
           {
             title: "Passion",
-            content: "si j'ai choisi d'être indépendant, c'est pour la passion de créer et la liberté de choisir mes projets. Ce qui signifie que je travaille beaucoup par passion et mets du coeur à l'ouvrage."
+            content: "si j'ai choisi d'être indépendant, c'est parce que j'aime créer et avoir la liberté de choisir mes projets. Ce qui signifie que je travaille beaucoup par passion et mets du coeur à l'ouvrage."
           }
         ]
       },
       cta: {
         title: "L'offre vous intéresse ?",
-        intro: "Prenons contact, expliquez moi votre projet ainsi que vos besoins et vos envies et je reviendrai vers vous le plus vite possible. Bonne journée 🎈",
+        intro: "Prenons contact ! Cliquez sur le bouton ci-dessous et expliquez-moi votre projet ainsi que vos besoins en quelques lignes en remplissant le formulaire. Je reviendrai vers vous le plus vite possible. Vous pouvez également me contacter par <a href='mailto:hello@quentin-bellanger.com?subject=Bonjour%20Quentin%20!'>email</a>. Bonne journée 🎈",
         link: {
           href: "https://quentin-bellanger.typeform.com/to/XqqHm1",
           content: "Contactez-moi",

@@ -39,6 +39,12 @@ module.exports = {
     { src: '@/assets/stylesheets/common.scss', lang: 'scss'}
   ],
   /*
+  ** Modules
+  */
+  plugins: [
+    { src: '~plugins/ga.js', ssr: false }
+  ],
+  /*
   ** Build configuration
   */
   build: {
