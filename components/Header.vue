@@ -1,62 +1,65 @@
 <template lang="html">
   <header>
-    <nuxt-link :to="home.href" :title="home.image.title">
-      <img :src="imgPath(home.image.src)" :alt="home.image.alt" class="avatar">
+    <nuxt-link :to="localePath('index')" :title="$t('header.home.title')">
+      <img :src="imgPath('pp.png')" :alt="$t('header.home.title')" class="avatar">
     </nuxt-link>
 
-    <button type="button" @click="toggleMenu">{{ button }}</button>
+    <button type="button" @click="toggleMenu">{{ $t('header.navigation.title') }}</button>
 
     <nav class="mobile-nav closed">
       <nuxt-link
-        :to="link.href"
+        v-for="(link, index) in $t('header.navigation.items')"
+        :to="localePath(link.slug)"
         :title="link.title"
-        v-for="(link, index) in navigation.links"
-        v-if="!link.external"
         :key="index"
       >
-        {{link.content}}
+        {{ link.text }}
       </nuxt-link>
 
       <a
-        :href="link.href"
-        :title="link.title"
-        :target="link.target"
-        v-for="(link, index) in navigation.links"
-        v-if="link.external"
-        :key="index"
+        href="mailto:hello@quentin-bellanger.com"
+        :title="$t('header.navigation.contact.text')"
       >
-        {{link.content}}
+        {{ $t('header.navigation.contact.text') }}
       </a>
 
-      <nuxt-link :to="locale.en.href" :title="locale.en.title">
-        <img :src="imgPath(locale.en.img)" :alt="locale.en.title" class="flag">
+      <nuxt-link
+        v-for="locale in $i18n.locales"
+        v-if="locale.code !== $i18n.locale"
+        :key="locale.code"
+        :title="locale.name"
+        :to="switchLocalePath(locale.code)"
+      >
+        <img :src="imgPath(locale.flag)" :alt="locale.name" class="flag">
       </nuxt-link>
+
     </nav>
 
     <nav class="desktop-nav">
       <nuxt-link
-        :to="link.href"
+        v-for="(link, index) in $t('header.navigation.items')"
+        :to="localePath(link.slug)"
         :title="link.title"
-        v-for="(link, index) in navigation.links"
-        v-if="!link.external"
         :key="index"
       >
-        {{link.content}}
+        {{ link.text }}
       </nuxt-link>
 
       <a
-        :href="link.href"
-        :title="link.title"
-        :target="link.target"
-        v-for="(link, index) in navigation.links"
-        v-if="link.external"
-        :key="index"
+        href="mailto:hello@quentin-bellanger.com"
+        :title="$t('header.navigation.contact.text')"
       >
-        {{link.content}}
+        {{ $t('header.navigation.contact.text') }}
       </a>
 
-      <nuxt-link :to="locale.en.href" :title="locale.en.title">
-        <img :src="imgPath(locale.en.img)" :alt="locale.en.title" class="flag">
+      <nuxt-link
+        v-for="locale in $i18n.locales"
+        v-if="locale.code !== $i18n.locale"
+        :key="locale.code"
+        :title="locale.name"
+        :to="switchLocalePath(locale.code)"
+      >
+        <img :src="imgPath(locale.flag)" :alt="locale.name" class="flag">
       </nuxt-link>
     </nav>
 </header>
@@ -64,56 +67,6 @@
 
 <script type="text/javascript">
 export default {
-  data() {
-    return {
-      currentPath: this.$nuxt.$route.path,
-      home: {
-        href: "/",
-        image: {
-          title: "Quentin Bellanger",
-          src: "pp.png",
-          alt: "Quentin Bellanger"
-        }
-      },
-      button: "Menu",
-      navigation: {
-        links: [
-          {
-            content: "Services",
-            href: "/services",
-            title: "Voir mes services",
-            external: false
-          },
-          // {
-          //   content: "Références",
-          //   href: "/work",
-          //   title: "Découvrez mon travail",
-          //   external: false
-          // },
-          {
-            content: "Blog",
-            href: "https://blog.quentin-bellanger.com",
-            title: "Lire mes articles de blog",
-            target: "_blank",
-            external: true
-          },
-          {
-            content: "Contact",
-            href: "mailto:hello@quentin-bellanger.com?subject=Bonjour%20Quentin%20!",
-            title: "Envoyez moi un email",
-            external: true
-          }
-        ]
-      },
-      locale: {
-        en: {
-          img: "en.png",
-          href: "/en",
-          title: "Website in English"
-        }
-      }
-    }
-  },
   methods: {
     imgPath (imageName) {
       return require(`~/assets/images/${imageName}`)

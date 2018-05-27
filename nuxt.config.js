@@ -1,3 +1,5 @@
+const i18n = require('./i18n')
+
 module.exports = {
   /*
   ** Headers of the page
@@ -40,6 +42,12 @@ module.exports = {
   ],
   /*
   ** Modules
+  */
+  modules: [
+    ['nuxt-i18n', i18n]
+  ],
+  /*
+  ** Plugins
   */
   plugins: [
     { src: '~plugins/ga.js', ssr: false }
