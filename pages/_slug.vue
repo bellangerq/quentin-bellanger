@@ -7,6 +7,7 @@
 
 <script>
 export default {
+  i18n: false,
   asyncData ({ app, route }) {
     return app.$content('/').get(route.path)
     .then(post => {
