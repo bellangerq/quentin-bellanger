@@ -51,7 +51,8 @@ a {
   }
 }
 
-ul {
+ul,
+ol {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -98,7 +99,8 @@ cite {
     font-size: 1.2em;
   }
 
-  ul {
+  ul,
+  ol {
 
     li {
       font-size: 1.2em;
