@@ -38,13 +38,15 @@ module.exports = {
   css: [
     { src: '@/assets/stylesheets/vars.scss', lang: 'scss'},
     { src: '@/assets/stylesheets/typo.scss', lang: 'scss'},
-    { src: '@/assets/stylesheets/common.scss', lang: 'scss'}
+    { src: '@/assets/stylesheets/common.scss', lang: 'scss'},
+    { src: '@/assets/stylesheets/prism.css', lang: 'css' }
   ],
   /*
   ** Modules
   */
   modules: [
-    ['nuxt-i18n', i18n]
+    ['nuxt-i18n', i18n],
+    'nuxtent'
   ],
   /*
   ** Plugins

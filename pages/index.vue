@@ -11,3 +11,18 @@
     <nuxt-link :to="localePath('services')" class="cta" :title="$t('homepage.button.title')">{{ $t('homepage.button.content') }}</nuxt-link>
   </section>
 </template>
+
+<script>
+  export default {
+    head () {
+      return {
+        title: this.$t('homepage.meta.title'),
+        meta: [
+          { hid: 'og:title', property: 'og:title', content: this.$t('homepage.meta.title') },
+          { hid: 'og:description', property: 'description', content: this.$t('homepage.meta.description') },
+          { hid: 'description', property: 'description', content: this.$t('homepage.meta.description') }
+        ]
+      }
+    }
+  }
+</script>

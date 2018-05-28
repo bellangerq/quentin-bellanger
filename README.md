@@ -2,6 +2,11 @@
 
 My personal website: https://quentin-bellanger.com
 
+## To do
+- [ ] Setup `og:image` for `/_slug` page
+- [ ] Style `/_slug` page
+- [ ] Style `/blog` page
+
 ## Development
 
 ``` bash
