@@ -1,5 +1,5 @@
 ---
-title: 'Keyboard navigation with only HTML ⌨'
+title: 'Keyboard navigation with only HTML'
 description: 'A short guide about accessibility based on a real project.'
 featured_image: 'input.jpg'
 ---

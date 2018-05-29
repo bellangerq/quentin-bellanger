@@ -1,5 +1,5 @@
 ---
-title: 'The shorter the bettr: my first Ruby on Rails project 💎'
+title: 'The shorter the bettr: my first Ruby on Rails project'
 description: 'Here is what I learnt building this bit.ly like web app.'
 featured_image: 'input.jpg'
 ---

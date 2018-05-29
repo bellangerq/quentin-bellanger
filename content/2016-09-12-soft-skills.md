@@ -1,5 +1,5 @@
 ---
-title: 'Upgrade your developer stack with non-development related skills 🏅'
+title: 'Upgrade your developer stack with non-development related skills'
 description: 'Development isn’t just about writing lines of code: learn how these soft skills can make you a better developer.'
 featured_image: 'input.jpg'
 ---

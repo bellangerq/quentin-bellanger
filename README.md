@@ -3,10 +3,11 @@
 My personal website: https://quentin-bellanger.com
 
 ## To do
-- [ ] Work on `Post` component
-- [ ] Style `/blog` page
+- [x] Work on `Post` component
+- [x] Style `/blog` page
 - [ ] Style `/_slug` page elements
 - [ ] Scope every css
+- [ ] Create Verminal Prismjs theme
 
 ## Development
 
