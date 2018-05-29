@@ -6,7 +6,7 @@ My personal website: https://quentin-bellanger.com
 - [x] Work on `Post` component
 - [x] Style `/blog` page
 - [ ] Style `/_slug` page elements
-- [ ] Scope every css
+- [x] Scope every css
 - [ ] Create Verminal Prismjs theme
 
 ## Development
