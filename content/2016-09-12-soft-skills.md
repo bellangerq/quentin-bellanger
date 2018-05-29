@@ -1,6 +1,7 @@
 ---
 title: 'Upgrade your developer stack with non-development related skills 🏅'
 description: 'Development isn’t just about writing lines of code: learn how these soft skills can make you a better developer.'
+featured_image: 'input.jpg'
 ---
 
 I am among those who think development isn’t just about coding. There are much more things that are also part of the job. Whether you are iOS, Android or web developer, you can raise your value by *learning* these soft skills.

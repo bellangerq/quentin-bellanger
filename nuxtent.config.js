@@ -4,7 +4,7 @@ module.exports = {
   content: {
     page: '/_slug',
     permalink: ':slug',
-    isPost: false,
+    isPost: true,
     generate: ['get', 'getAll']
   },
   parsers: {

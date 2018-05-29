@@ -3,17 +3,13 @@
     <h1>{{ $t('blog.title') }}</h1>
     <p>{{ $t('blog.intro') }}</p>
 
-    <nuxt-link
-      v-for="(post, index) in posts"
-      :key="index"
-      :to="post.permalink"
-    >
-      <h2>{{ post.title }}</h2>
-    </nuxt-link>
+    <Post v-for="(post, index) in posts" :key="index" :post="post"></Post>
   </section>
 </template>
 
 <script>
+import Post from '~/components/Post.vue'
+
 export default {
   asyncData ({ app }) {
     return app.$content('/').getAll()
@@ -33,6 +29,9 @@ export default {
         { hid: 'description', property: 'description', content: this.$t('blog.meta.description') }
       ]
     }
+  },
+  components: {
+    Post
   }
 }
 </script>

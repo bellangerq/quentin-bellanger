@@ -1,6 +1,7 @@
 ---
 title: 'Building your personal website: a complete guide for junior developers 🛠'
 description: 'From goal setting to publishing: everything you need to know to ship your first project.'
+featured_image: 'input.jpg'
 ---
 
 ## Why do I need a website?

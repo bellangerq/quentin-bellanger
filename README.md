@@ -3,9 +3,10 @@
 My personal website: https://quentin-bellanger.com
 
 ## To do
-- [ ] Setup `og:image` for `/_slug` page
-- [ ] Style `/_slug` page
+- [ ] Work on `Post` component
 - [ ] Style `/blog` page
+- [ ] Style `/_slug` page elements
+- [ ] Scope every css
 
 ## Development
 
