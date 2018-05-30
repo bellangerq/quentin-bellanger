@@ -1,5 +1,6 @@
 @import 'vars';
 
+// Titles
 h1 {
   color: $color-black;
   font-size: 1.8em;
@@ -15,6 +16,7 @@ h2 {
   margin: 40px 0;
 }
 
+// Paragraphs
 p {
   color: $color-black;
   font-size: 1em;
@@ -24,6 +26,7 @@ p {
   margin: 40px 0;
 }
 
+// Links
 a {
   color: $color-main;
   transition: color 0.3s ease-in-out;
@@ -51,6 +54,7 @@ a {
   }
 }
 
+// Lists
 ul,
 ol {
   list-style: none;
@@ -63,7 +67,7 @@ ol {
     font-weight: 300;
     letter-spacing: 0.02em;
     line-height: 1.5em;
-    margin: 20px 0;
+    margin: 0;
     padding: 0 0 0 20px;
     position: relative;
 
@@ -81,6 +85,7 @@ ol {
   }
 }
 
+// Quotes
 blockquote {
   border-left: 3px solid $color-main;
   margin: 40px 0;
@@ -92,6 +97,31 @@ cite {
   font-size: 0.9em;
   font-style: normal;
   margin: 20px 0;
+}
+
+// Inline code
+code {
+  background: rgba($color-black, 0.06);
+  border-radius: $radius;
+  color: $color-black;
+  font-size: 0.9em;
+  padding: 3px;
+}
+
+// Code block
+pre code {
+  font-size: 1em;
+  padding: 0;
+}
+
+// Keyboard input
+kbd {
+  background: rgba($color-black, 0.06);
+  border: 1px solid $color-black;
+  border-radius: $radius;
+  color: $color-black;
+  font-size: 0.9em;
+  padding: 3px;
 }
 
 @media (min-width: 650px) {

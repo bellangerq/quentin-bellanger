@@ -6,7 +6,7 @@ featured_image: 'input.jpg'
 
 I don’t often talk about accessibility, but this post is based on a task I had to complete during my first job as a freelance web developer. I was asked to work on an existing website in order to create a keyboard navigation system. Huge challenge because before that, I had never done such exercise and I knew few things about keyboard navigation.
 
-So I learnt on the job about the best practices on making a website that can be used only with a keyboard. Not only I learnt about how to do that but I also learnt about accessibility which is an important thing in web development.g
+So I learnt on the job about the best practices on making a website that can be used only with a keyboard. Not only I learnt about how to do that but I also learnt about accessibility which is an important thing in web development.
 
 So I wanted to share here what I learned. The way I found was perfectly answering the required need but there are probably different ways to do this (*tweet me [@bellanger_q](https://twitter.com/bellanger_q) on how you would do that*).
 
