@@ -1,4 +1,6 @@
 const Prism = require('prismjs')
+const loadLanguages = require('prismjs/components/index.js')
+loadLanguages(['ruby', 'sass', 'bash', 'markdown', 'yaml', 'json'])
 
 module.exports = {
   content: {
