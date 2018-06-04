@@ -1,10 +1,8 @@
-# quentin-bellanger
+# Quentin Bellanger
 
-My personal website: https://quentin-bellanger.com
+My personal website: https://quentin-bellanger.com.
 
-## To do
-- [ ] Style `/_slug` page elements
-- [ ] Customize code snippets  with Prismjs
+![Quentin Bellanger's website](/static/preview.png)
 
 ## Development
 
