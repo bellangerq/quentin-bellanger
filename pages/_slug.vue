@@ -21,9 +21,10 @@ export default {
     return {
       title: this.post.title,
       meta: [
-        { hid: 'og:title', property: 'og:title', content: this.post.title },
-        { hid: 'og:description', property: 'description', content: this.post.description },
-        { hid: 'description', property: 'description', content: this.post.description }
+        { name: 'og:title', content: this.post.title },
+        { name: 'og:description', content: this.post.description },
+        { name: 'description', content: this.post.description },
+        { name: 'og:type', content: 'article' }
       ]
     }
   }

@@ -50,9 +50,9 @@ export default {
     return {
       title: this.$t('services.meta.title'),
       meta: [
-        { hid: 'og:title', property: 'og:title', content: this.$t('services.meta.title') },
-        { hid: 'og:description', property: 'description', content: this.$t('services.meta.description') },
-        { hid: 'description', property: 'description', content: this.$t('services.meta.description') }
+        { name: 'og:title', content: this.$t('services.meta.title') },
+        { name: 'og:description', content: this.$t('services.meta.description') },
+        { name: 'description', content: this.$t('services.meta.description') }
       ]
     }
   }

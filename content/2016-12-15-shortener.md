@@ -6,7 +6,7 @@ featured_image: 'input.jpg'
 
 Since I’ve moved from marketer to web developer (*already 5 months*), I’m still looking for a specialization. Web development is split between front-end and back-end where many technologies compete against each other in both sides. Add to this all the frameworks that exist. It’s hard to find your path and to decide what you really want to do.
 
-A thing is sure: I do want to learn more! I’m more into front-end development but I’m also huge fan of Ruby on Rails. So I decided to create a small web app on this framework: [The shorter the bettr](http://shrtbtr.com). It’s an really simple URL shortener.
+A thing is sure: I do want to learn more! I’m more into front-end development but I’m also huge fan of Ruby on Rails. So I decided to create a small web app on this framework: [The shorter the bettr](http://www.shrtbtr.com). It’s an really simple URL shortener.
 
 ### Dead simple URL shortener
 
@@ -76,4 +76,4 @@ I’d recommend any new developer interested in learning Rails (*or not*) to try
 - Create my own scripts for repetitive tasks (*local server, deploy…*),
 - It increased my knowledge in Ruby language and HAML syntax.
 
-In case you have questions or suggestions, feel free to ask in comment (*or [write me an email](mailto:hello@quentin-bellanger.fr) or [ping me on Twitter](http://twitter.com/bellanger_q)*). For those who want to take a deeper look at the code, check the Github repository.
+In case you have questions or suggestions, feel free to ask in comment (*or [write me an email](mailto:hello@quentin-bellanger.fr) or [ping me on Twitter](http://www.twitter.com/bellanger_q)*). For those who want to take a deeper look at the code, check the Github repository.

@@ -24,9 +24,9 @@ export default {
     return {
       title: this.$t('blog.meta.title'),
       meta: [
-        { hid: 'og:title', property: 'og:title', content: this.$t('blog.meta.title') },
-        { hid: 'og:description', property: 'description', content: this.$t('blog.meta.description') },
-        { hid: 'description', property: 'description', content: this.$t('blog.meta.description') }
+        { name: 'og:title', content: this.$t('blog.meta.title') },
+        { name: 'og:description', content: this.$t('blog.meta.description') },
+        { name: 'description', content: this.$t('blog.meta.description') }
       ]
     }
   },
