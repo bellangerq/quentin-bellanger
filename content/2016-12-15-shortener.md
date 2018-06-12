@@ -1,7 +1,6 @@
 ---
 title: 'The shorter the bettr: my first Ruby on Rails project'
 description: 'Here is what I learnt building this bit.ly like web app.'
-featured_image: 'input.jpg'
 ---
 
 Since I’ve moved from marketer to web developer (*already 5 months*), I’m still looking for a specialization. Web development is split between front-end and back-end where many technologies compete against each other in both sides. Add to this all the frameworks that exist. It’s hard to find your path and to decide what you really want to do.

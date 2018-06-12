@@ -1,7 +1,6 @@
 ---
 title: 'Keyboard navigation with only HTML'
 description: 'A short guide about accessibility based on a real project.'
-featured_image: 'input.jpg'
 ---
 
 I don’t often talk about accessibility, but this post is based on a task I had to complete during my first job as a freelance web developer. I was asked to work on an existing website in order to create a keyboard navigation system. Huge challenge because before that, I had never done such exercise and I knew few things about keyboard navigation.
