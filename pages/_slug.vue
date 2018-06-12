@@ -24,7 +24,8 @@ export default {
         { name: 'og:title', content: this.post.title },
         { name: 'og:description', content: this.post.description },
         { name: 'description', content: this.post.description },
-        { name: 'og:type', content: 'article' }
+        { name: 'og:type', content: 'article' },
+        { name: 'twitter:title', content: this.post.title }
       ]
     }
   }

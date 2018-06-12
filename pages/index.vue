@@ -20,7 +20,8 @@
         meta: [
           { name: 'og:title', content: this.$t('homepage.meta.title') },
           { name: 'og:description', content: this.$t('homepage.meta.description') },
-          { name: 'description', content: this.$t('homepage.meta.description') }
+          { name: 'description', content: this.$t('homepage.meta.description') },
+          { name: 'twitter:title', content: this.$t('homepage.meta.title') },
         ]
       }
     }

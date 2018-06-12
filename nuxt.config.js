@@ -20,7 +20,7 @@ module.exports = {
       { name: 'og:type', content: 'website' },
 
       // Twitter
-      { name: 'twitter:title', content: '@bellanger_q' },
+      { name: 'twitter:title', content: 'Quentin Bellanger 🎈 | Développeur web freelance' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:image', content: 'https://quentin-bellanger.com/og.png' },
       { name: 'twitter:widgets:theme', content: 'light' },

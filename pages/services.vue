@@ -52,7 +52,8 @@ export default {
       meta: [
         { name: 'og:title', content: this.$t('services.meta.title') },
         { name: 'og:description', content: this.$t('services.meta.description') },
-        { name: 'description', content: this.$t('services.meta.description') }
+        { name: 'description', content: this.$t('services.meta.description') },
+        { name: 'twitter:title', content: this.$t('services.meta.title') },
       ]
     }
   }

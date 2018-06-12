@@ -26,7 +26,8 @@ export default {
       meta: [
         { name: 'og:title', content: this.$t('blog.meta.title') },
         { name: 'og:description', content: this.$t('blog.meta.description') },
-        { name: 'description', content: this.$t('blog.meta.description') }
+        { name: 'description', content: this.$t('blog.meta.description') },
+        { name: 'twitter:title', content: this.$t('blog.meta.title') }
       ]
     }
   },
