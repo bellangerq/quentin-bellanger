@@ -5,13 +5,13 @@ description: 'On how to build structured and meaningful quotations of the web th
 
 As I am browsing the web, I'm often noticing myself inspecting websites' source code (I guess it's a web developer OCD...). I notice that many quotes on the web are losing their  meaning: they are reduced to simple `<p>` tags. Let's see how developers should emphasize their original nature.
 
-## Reminder: semantic is cool
+## Semantic is important
 
 A semantic HTML helps to communicate with the browser in order to give it additional information and a better context about what's inside a web page. It gives elements a meaning. This way, browsers can handle components and tags differently and render them the way they should be rendered. It also adds native keyboard navigation and screen readers points of reference ([more on semantic and accessibility](https://24ways.org/2017/accessibility-through-semantic-html/)) which helps a lot to empower web accessibility.
 
 This behavior is managed by browsers and therefore is different in every browser and dependent of how they are implementing new HTML features. Some new elements (I think of `<input type="color">` or `<details>` and `<summary>`) can save developers hours of far-fetched JavaScript or CSS code to reproduce their behavior. But be sure to check [CanIUse](https://caniuse.com/) to know the support across browsers.
 
-## Semantic quotes
+## Building proper quotes
 
 Back to our subject, there are two ways to create semantic quotes on the internet. Back to our subject, there are two ways to create semantic quotes on the internet. Let's consider [this Codepen](https://codepen.io/bellangerq/pen/MXmGKw) I made with the two quoting strategies detailed below:
 
