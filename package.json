@@ -1,7 +1,7 @@
 {
   "name": "quentin-bellanger",
   "version": "1.0.0",
-  "description": "Nuxt.js project",
+  "description": "Personal website of Quentin Bellanger",
   "author": "Quentin Bellanger <hello@quentin-bellanger.com>",
   "private": true,
   "scripts": {
@@ -16,9 +16,9 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.1",
+    "@nuxtjs/pwa": "latest",
     "moment": "^2.22.1",
-    "nuxt": "^1.0.0",
-    "nuxt-i18n": "^3.2.3",
+    "nuxt": "^1.4.1",
     "nuxtent": "^1.4.1",
     "prismjs": "^1.14.0"
   },

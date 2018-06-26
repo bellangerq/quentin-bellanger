@@ -1,11 +1,9 @@
-const i18n = require('./i18n')
-
 module.exports = {
   /*
   ** Headers of the page
   */
   head: {
-    title: 'Quentin Bellanger 🎈 | Développeur web freelance',
+    title: 'Quentin Bellanger 🎈 | Front-end developer',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -13,14 +11,9 @@ module.exports = {
 
       // Facebook
       { name: 'og:site_name', content: 'Quentin Bellanger' },
-      { name: 'og:title', content: 'Quentin Bellanger 🎈 | Développeur web freelance' },
       { name: 'og:image', content: 'https://quentin-bellanger.com/og.png' },
-      { name: 'og:url', content: 'https://quentin-bellanger.com' },
-      { name: 'og:description', content: 'J\'ai une passion pour le développement web et crée des sites Internet en indépendant.' },
-      { name: 'og:type', content: 'website' },
 
       // Twitter
-      { name: 'twitter:title', content: 'Quentin Bellanger 🎈 | Développeur web freelance' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:image', content: 'https://quentin-bellanger.com/og.png' },
       { name: 'twitter:widgets:theme', content: 'light' },
@@ -46,9 +39,26 @@ module.exports = {
   ** Modules
   */
   modules: [
-    ['nuxt-i18n', i18n],
-    'nuxtent'
+    'nuxtent',
+    '@nuxtjs/pwa'
   ],
+  /*
+  ** Manifest
+  */
+  manifest: {
+    'name': "Quentin Bellanger \n Front-end developer",
+    'short_name': "Quentin B.",
+    'start_url': '/?app=true',
+    'display': 'standalone',
+    'orientation': 'portrait',
+    'theme_color': '#5090ff',
+    'background_color': '#fff',
+    'icons': [{
+      'src': '@/static/icon.png',
+      'sizes': '512x512',
+      'type': 'image/png'
+    }]
+  },
   /*
   ** Plugins
   */

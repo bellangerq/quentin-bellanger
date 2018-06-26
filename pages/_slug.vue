@@ -21,11 +21,12 @@ export default {
     return {
       title: this.post.title,
       meta: [
-        { name: 'og:title', content: this.post.title },
-        { name: 'og:description', content: this.post.description },
-        { name: 'description', content: this.post.description },
-        { name: 'og:type', content: 'article' },
-        { name: 'twitter:title', content: this.post.title }
+        { hid: 'description', name: 'description', content: this.post.description },
+        { hid: 'og:title', name: 'og:description', content: this.post.description },
+        { hid: 'og:description', name: 'og:title', content: this.post.title },
+        { hid: 'og:url', name: 'og:url', content: `https://quentin-bellanger.com${this.$nuxt.$route.path}` },
+        { hid: 'og:type', name: 'og:type', content: 'article' },
+        { hid: 'twitter:title', name: 'twitter:title', content: this.post.title }
       ]
     }
   }

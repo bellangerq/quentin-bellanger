@@ -1,15 +1,15 @@
 <template lang="html">
   <header>
-    <nuxt-link :to="localePath('index')" :title="$t('header.home.title')">
-      <img :src="imgPath('pp.png')" :alt="$t('header.home.title')" class="avatar">
+    <nuxt-link to="/" :title="title">
+      <img :src="imgPath('pp.png')" :alt="title" class="avatar">
     </nuxt-link>
 
-    <button type="button" @click="toggleMenu">{{ $t('header.navigation.title') }}</button>
+    <button type="button" @click="toggleMenu">{{ navigation.title }}</button>
 
-    <nav class="mobile-nav closed">
+    <nav class="mobile-nav hidden">
       <nuxt-link
-        v-for="(link, index) in $t('header.navigation.items')"
-        :to="localePath(link.slug)"
+        v-for="(link, index) in navigation.items"
+        :to="link.slug"
         :title="link.title"
         :key="index"
       >
@@ -18,27 +18,17 @@
 
       <a
         href="mailto:hello@quentin-bellanger.com"
-        :title="$t('header.navigation.contact.text')"
+        :title="navigation.contact.text"
       >
-        {{ $t('header.navigation.contact.text') }}
+        {{ navigation.contact.text }}
       </a>
-
-      <nuxt-link
-        v-for="locale in $i18n.locales"
-        v-if="locale.code !== $i18n.locale"
-        :key="locale.code"
-        :title="locale.name"
-        :to="switchLocalePath(locale.code)"
-      >
-        <img :src="imgPath(locale.flag)" :alt="locale.name" class="flag">
-      </nuxt-link>
 
     </nav>
 
     <nav class="desktop-nav">
       <nuxt-link
-        v-for="(link, index) in $t('header.navigation.items')"
-        :to="localePath(link.slug)"
+        v-for="(link, index) in navigation.items"
+        :to="link.slug"
         :title="link.title"
         :key="index"
       >
@@ -47,33 +37,47 @@
 
       <a
         href="mailto:hello@quentin-bellanger.com"
-        :title="$t('header.navigation.contact.text')"
+        :title="navigation.contact.text"
       >
-        {{ $t('header.navigation.contact.text') }}
+        {{ navigation.contact.text }}
       </a>
-
-      <nuxt-link
-        v-for="locale in $i18n.locales"
-        v-if="locale.code !== $i18n.locale"
-        :key="locale.code"
-        :title="locale.name"
-        :to="switchLocalePath(locale.code)"
-      >
-        <img :src="imgPath(locale.flag)" :alt="locale.name" class="flag">
-      </nuxt-link>
     </nav>
 </header>
 </template>
 
 <script type="text/javascript">
 export default {
+  data() {
+    return {
+      title: 'Quentin Bellanger',
+      navigation: {
+        title: 'Menu',
+        items: {
+          services: {
+            text: 'Services',
+            title: 'See my services',
+            slug: 'services'
+          },
+          blog: {
+            text: 'Blog',
+            title: 'Read my articles',
+            slug: 'blog'
+          }
+        },
+        contact: {
+          text: 'Contact',
+          title: 'Contact me'
+        }
+      }
+    }
+  },
   methods: {
     imgPath (imageName) {
       return require(`~/assets/images/${imageName}`)
     },
     toggleMenu () {
       const mobileNav = document.querySelector('.mobile-nav')
-      mobileNav.classList.toggle('closed')
+      mobileNav.classList.toggle('hidden')
     }
   }
 }
@@ -145,7 +149,7 @@ header {
       display: none;
     }
 
-    &.closed {
+    &.hidden {
       display: none;
     }
   }

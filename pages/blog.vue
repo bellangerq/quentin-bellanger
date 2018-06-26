@@ -1,7 +1,7 @@
 <template lang="html">
   <section>
-    <h1>{{ $t('blog.title') }}</h1>
-    <p>{{ $t('blog.intro') }}</p>
+    <h1>{{ title }}</h1>
+    <p>{{ intro }}</p>
 
     <Post v-for="(post, index) in posts" :key="index" :post="post"></Post>
   </section>
@@ -11,6 +11,16 @@
 import Post from '~/components/Post.vue'
 
 export default {
+  data() {
+    return {
+      meta: {
+        title: 'Quentin Bellanger 🎈 | Blog',
+        description: "I like to write about the following topics: CSS, Jamstack, Vuejs, JavaScript, HTML, side projects... Happy reading."
+      },
+      title: 'Blog',
+      intro: "I like to write about the following topics: CSS, Jamstack, Vuejs, JavaScript, HTML, side projects... Happy reading."
+    }
+  },
   asyncData ({ app }) {
     return app.$content('/').getAll()
     .then(res => {
@@ -22,12 +32,14 @@ export default {
   },
   head () {
     return {
-      title: this.$t('blog.meta.title'),
+      title: this.meta.title,
       meta: [
-        { name: 'og:title', content: this.$t('blog.meta.title') },
-        { name: 'og:description', content: this.$t('blog.meta.description') },
-        { name: 'description', content: this.$t('blog.meta.description') },
-        { name: 'twitter:title', content: this.$t('blog.meta.title') }
+        { hid: 'description', name: 'description', content: this.meta.description },
+        { hid: 'og:title', name: 'og:title', content: this.meta.title },
+        { hid: 'og:description', name: 'og:description', content: this.meta.description },
+        { hid: 'og:url', name: 'og:url', content: `https://quentin-bellanger.com${this.$nuxt.$route.path}` },
+        { hid: 'og:type', name: 'og:type', content: 'website' },
+        { hid: 'twitter:title', name: 'twitter:title', content: this.meta.title }
       ]
     }
   },
