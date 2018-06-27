@@ -33,6 +33,7 @@ module.exports = {
     { src: '@/assets/stylesheets/vars.scss', lang: 'scss'},
     { src: '@/assets/stylesheets/typo.scss', lang: 'scss'},
     { src: '@/assets/stylesheets/common.scss', lang: 'scss'},
+    { src: '@/assets/stylesheets/transition.scss', lang: 'scss'},
     { src: '@/assets/stylesheets/prism.css', lang: 'css' }
   ],
   /*

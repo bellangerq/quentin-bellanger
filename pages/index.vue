@@ -5,7 +5,7 @@
     <p v-for="(paragraph, index) in paragraphs" :key="index">{{ paragraph }}</p>
 
     <blockquote :cite="quote.source">
-      <p>"{{ quote.content }}" <cite>{{ quote.author }}</cite></p>
+      <p>"{{ quote.content }}" <span>{{ quote.author }}</span></p>
     </blockquote>
 
     <nuxt-link to="/services" class="cta" :title="button.title">{{ button.content }}</nuxt-link>
