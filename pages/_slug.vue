@@ -7,15 +7,16 @@
 
 <script>
 export default {
-  i18n: false,
-  asyncData ({ app, route }) {
+  asyncData ({ app, route, error }) {
     return app.$content('/').get(route.path)
     .then(post => {
       return {
         post: post
       }
     })
-    .catch(console.error)
+    .catch(e => {
+      error({ statusCode: 404 })
+    })
   },
   head () {
     return {

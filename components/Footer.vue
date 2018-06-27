@@ -54,7 +54,7 @@ footer {
 
   span {
     color: $color-black-light;
-    font-size: .90em;
+    font-size: 0.90em;
   }
 
   .social-links {
@@ -65,16 +65,13 @@ footer {
       margin-left: 20px;
       text-decoration: none;
 
-      svg {
-        transition: .3s;
-      }
-
       &:hover,
       &:focus {
+        color: $color-main;
+      }
 
-        svg {
-          stroke: $color-main;
-        }
+      svg {
+        transition: 0.3s;
       }
     }
   }

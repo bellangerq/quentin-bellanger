@@ -111,7 +111,7 @@ header {
     background: transparent;
     border: none;
     color: lighten($color-black, 60%);
-    font-size: .90em;
+    font-size: 0.90em;
     padding: 0;
 
     &:hover,
@@ -127,7 +127,7 @@ header {
     a {
       color: lighten($color-black, 60%);
       display: block;
-      font-size: .90em;
+      font-size: 0.90em;
       padding: 20px 0;
       text-decoration: none;
 
@@ -138,7 +138,7 @@ header {
     }
 
     &.mobile-nav {
-      box-shadow: 0 2px 2px 0 rgba($color-black, .14);
+      box-shadow: 0 2px 2px 0 rgba($color-black, 0.14);
       left: 0;
       padding: 0 20px;
       position: absolute;
