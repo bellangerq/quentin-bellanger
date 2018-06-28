@@ -53,6 +53,11 @@ export default {
       navigation: {
         title: 'Menu',
         items: {
+          work: {
+            text: 'Work',
+            title: 'Discover my recent work',
+            slug: 'work'
+          },
           services: {
             text: 'Services',
             title: 'See my services',
