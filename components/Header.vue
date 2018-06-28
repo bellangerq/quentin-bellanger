@@ -6,7 +6,7 @@
 
     <button type="button" @click="toggleMenu">{{ navigation.title }}</button>
 
-    <nav class="mobile-nav hidden">
+    <nav class="mobile-nav hidden" role="navigation">
       <nuxt-link
         v-for="(link, index) in navigation.items"
         :to="link.slug"
@@ -25,7 +25,7 @@
 
     </nav>
 
-    <nav class="desktop-nav">
+    <nav class="desktop-nav" role="navigation">
       <nuxt-link
         v-for="(link, index) in navigation.items"
         :to="link.slug"
@@ -45,7 +45,7 @@
 </header>
 </template>
 
-<script type="text/javascript">
+<script>
 export default {
   data() {
     return {

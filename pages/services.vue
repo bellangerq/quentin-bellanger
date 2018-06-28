@@ -43,7 +43,7 @@
   </section>
 </template>
 
-<script type="text/javascript">
+<script>
 import { mapState } from 'vuex'
 export default {
   data() {

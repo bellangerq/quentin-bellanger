@@ -1,5 +1,5 @@
 <template lang="html">
-  <article>
+  <article role="article">
     <time :datetime="post.date">{{ moment(post.date).format('MMMM Do YYYY') }}</time>
     <nuxt-link :to="post.permalink">
       <h2>{{ post.title }}</h2>
