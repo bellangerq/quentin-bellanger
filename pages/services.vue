@@ -49,7 +49,7 @@ export default {
   data() {
     return {
       meta: {
-        title: 'Quentin Bellanger 🎈 | Freelance web developer',
+        title: 'Quentin Bellanger 🎈 | Services',
         description: "Are you looking for a freelance developer for your next web project?"
       },
       title: "Are you looking for a freelance developer for your next web project?",
