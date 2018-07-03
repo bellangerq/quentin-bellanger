@@ -22,7 +22,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~/assets/stylesheets/vars.scss';
 article {
   margin: 50px 0;
 

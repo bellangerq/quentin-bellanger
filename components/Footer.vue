@@ -44,8 +44,6 @@
 </script>
 
 <style lang="scss" scoped>
-@import '~/assets/stylesheets/vars.scss';
-
 footer {
   align-items: center;
   display: flex;

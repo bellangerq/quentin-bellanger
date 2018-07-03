@@ -89,8 +89,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~/assets/stylesheets/vars.scss';
-
 header {
   align-items: center;
   box-sizing: border-box;

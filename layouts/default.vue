@@ -22,8 +22,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~/assets/stylesheets/vars.scss';
-
 .container > a {
   background: $color-white;
   left: -1000px;

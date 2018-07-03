@@ -41,7 +41,8 @@ module.exports = {
   */
   modules: [
     'nuxtent',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    ['nuxt-sass-resources-loader', '@/assets/stylesheets/vars.scss']
   ],
   /*
   ** Manifest
