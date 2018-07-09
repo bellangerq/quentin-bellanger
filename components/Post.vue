@@ -9,14 +9,7 @@
 </template>
 
 <script>
-import moment from 'moment'
-
 export default {
-  data () {
-    return {
-      moment
-    }
-  },
   methods: {
     postDate (date) {
       const locale = 'en-us'
