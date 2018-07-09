@@ -1,7 +1,7 @@
 <template lang="html">
   <header>
     <nuxt-link to="/" :title="title">
-      <img :src="imgPath('pp.png')" :alt="title" class="avatar">
+      <img :src="imgPath('pp.jpeg')" :alt="title" class="avatar">
     </nuxt-link>
 
     <button type="button" @click="toggleMenu">{{ navigation.title }}</button>
