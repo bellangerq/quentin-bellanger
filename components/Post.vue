@@ -1,6 +1,6 @@
 <template lang="html">
   <article role="article">
-    <time :datetime="post.date">{{ moment(post.date).format('MMMM Do YYYY') }}</time>
+    <time :datetime="post.date">{{ postDate(post.date) }}</time>
     <nuxt-link :to="post.permalink">
       <h2>{{ post.title }}</h2>
     </nuxt-link>
@@ -15,6 +15,12 @@ export default {
   data () {
     return {
       moment
+    }
+  },
+  methods: {
+    postDate (date) {
+      const locale = 'en-us'
+      return new Date(date).toLocaleString(locale, { month: "long", year: "numeric", day: "2-digit" })
     }
   },
   props: ['post']

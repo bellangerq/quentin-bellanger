@@ -22,10 +22,5 @@ $ npm run deploy
 
 ## To do
 
-- Performance
-  - [ ] Properly size images (srcset)
-- Accessibility
-  - [ ] Button contrast (check [here](https://dequeuniversity.com/rules/axe/2.2/color-contrast?application=lighthouse))
-- Best practices
-  - [ ] Error in console (`Failed to load resource: net::ERR_FILE_NOT_FOUND`)
-  - [ ] No HTTPS everywhere
+- [ ] Edit content style (lists, paragraphs...)
+- [ ] Add date to post page (global date helper)
