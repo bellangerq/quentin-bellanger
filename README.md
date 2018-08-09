@@ -23,4 +23,3 @@ $ npm run deploy
 ## To do
 
 - [ ] Edit content style (lists, paragraphs...)
-- [ ] Add date to post page (global date helper)

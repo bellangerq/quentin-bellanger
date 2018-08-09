@@ -49,3 +49,10 @@ img {
     padding: 0;
   }
 }
+
+time {
+  color: $color-black-light;
+  display: block;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}

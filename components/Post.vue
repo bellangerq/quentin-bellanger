@@ -1,6 +1,6 @@
 <template lang="html">
   <article role="article">
-    <time :datetime="post.date">{{ postDate(post.date) }}</time>
+    <time :datetime="post.date">{{ formatDate(post.date) }}</time>
     <nuxt-link :to="post.permalink">
       <h2>{{ post.title }}</h2>
     </nuxt-link>
@@ -9,13 +9,10 @@
 </template>
 
 <script>
+import dateHelpers from '@/mixins/date'
+
 export default {
-  methods: {
-    postDate (date) {
-      const locale = 'en-us'
-      return new Date(date).toLocaleString(locale, { month: "long", year: "numeric", day: "2-digit" })
-    }
-  },
+  mixins: [dateHelpers],
   props: ['post']
 }
 </script>
@@ -23,13 +20,6 @@ export default {
 <style lang="scss" scoped>
 article {
   margin: 50px 0;
-
-  time {
-    color: $color-black-light;
-    display: block;
-    font-size: 0.8em;
-    text-transform: uppercase;
-  }
 
   a {
     display: inline-block;

@@ -1,12 +1,16 @@
 <template lang="html">
   <article>
+    <time :datetime="post.date">{{ formatDate(post.date) }}</time>
     <h1>{{ post.title }}</h1>
     <div v-html="post.body"></div>
   </article>
 </template>
 
 <script>
+import dateHelpers from '@/mixins/date'
+
 export default {
+  mixins: [dateHelpers],
   asyncData ({ app, route, error }) {
     return app.$content('/').get(route.path)
     .then(post => {
