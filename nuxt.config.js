@@ -1,7 +1,4 @@
 module.exports = {
-  /*
-  ** Headers of the page
-  */
   head: {
     title: 'Quentin Bellanger 🎈 | Front-end developer',
     meta: [
@@ -24,9 +21,6 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
     ]
   },
-  /*
-  ** Customize the progress bar color
-  */
   loading: { color: '#5090ff' },
 
   css: [
@@ -36,17 +30,12 @@ module.exports = {
     { src: '@/assets/stylesheets/transition.scss', lang: 'scss'},
     { src: '@/assets/stylesheets/prism.css', lang: 'css' }
   ],
-  /*
-  ** Modules
-  */
   modules: [
     'nuxtent',
     '@nuxtjs/pwa',
-    ['nuxt-sass-resources-loader', '@/assets/stylesheets/vars.scss']
+    ['nuxt-sass-resources-loader', '@/assets/stylesheets/vars.scss'],
+    '@nuxtjs/dotenv'
   ],
-  /*
-  ** Manifest
-  */
   manifest: {
     'name': "Quentin Bellanger \n Front-end developer",
     'short_name': "Quentin B.",
@@ -61,19 +50,10 @@ module.exports = {
       'type': 'image/png'
     }]
   },
-  /*
-  ** Plugins
-  */
   plugins: [
     { src: '~plugins/ga.js', ssr: false }
   ],
-  /*
-  ** Build configuration
-  */
   build: {
-    /*
-    ** Run ESLint on save
-    */
     extend (config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
@@ -86,6 +66,6 @@ module.exports = {
     }
   },
   router: {
-    middleware: ['routeGuard']
+    middleware: ['routeGuard', 'contentful']
   }
 }

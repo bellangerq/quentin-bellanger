@@ -1,10 +1,10 @@
 <template lang="html">
   <article role="article">
-    <time :datetime="post.date">{{ formatDate(post.date) }}</time>
-    <nuxt-link :to="post.permalink">
-      <h2>{{ post.title }}</h2>
+    <!-- <time :datetime="article.date">{{ formatDate(article.date) }}</time> -->
+    <nuxt-link :to="article.route">
+      <h2>{{ article.title }}</h2>
     </nuxt-link>
-    <p>{{ post.description }}</p>
+    <p>{{ article.description }}</p>
   </article>
 </template>
 
@@ -13,7 +13,7 @@ import dateHelpers from '@/mixins/date'
 
 export default {
   mixins: [dateHelpers],
-  props: ['post']
+  props: ['article']
 }
 </script>
 

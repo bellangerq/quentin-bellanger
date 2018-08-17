@@ -1,20 +1,17 @@
 <template lang="html">
   <div class="project">
-    <a :href="work.href" target="_blank" rel="noopener">
-      <img @load="loadImg" :data-src="imgPath(work.src)" :alt="work.title + ': ' + work.subtitle">
+    <a :href="project.link" target="_blank" rel="noopener" :alt="project.title + ': ' + project.description">
+      <img @load="loadImg" :data-src="project.image.src" :alt="project.title + ': ' + project.description">
     </a>
-    <h2>{{ work.title }}</h2>
-    <h3>{{ work.subtitle }}</h3>
+    <h2>{{ project.title }}</h2>
+    <h3>{{ project.description }}</h3>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['work'],
+  props: ['project'],
   methods: {
-    imgPath (imageName) {
-      return require(`~/assets/images/${imageName}`)
-    },
     setImgSrc() {
       const images = document.querySelectorAll('[data-src]')
       images.forEach(image => {

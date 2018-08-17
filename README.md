@@ -22,4 +22,8 @@ $ npm run deploy
 
 ## To do
 
-- [ ] Edit content style (lists, paragraphs...)
+- Import all articles
+- Services page in Contentful
+- Header in Contentful
+- Footer in Contentful
+- Harmonize fields

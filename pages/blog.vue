@@ -1,50 +1,46 @@
 <template lang="html">
   <section>
-    <h1>{{ title }}</h1>
-    <p>{{ intro }}</p>
+    <h1>{{ blogPage.title }}</h1>
+    <p>{{ blogPage.intro }}</p>
 
-    <Post v-for="(post, index) in posts" :key="index" :post="post"></Post>
+    <Article v-for="(article, index) in blogPage.articles" :key="index" :article="article"></Article>
+
   </section>
 </template>
 
 <script>
-import Post from '~/components/Post.vue'
+import Article from '~/components/Article.vue'
 
 export default {
-  data() {
-    return {
-      meta: {
-        title: 'Quentin Bellanger 🎈 | Blog',
-        description: "I like to write about the following topics: CSS, Jamstack, Vuejs, JavaScript, HTML, side projects... Happy reading."
-      },
-      title: 'Blog',
-      intro: "I like to write about the following topics: CSS, Jamstack, Vuejs, JavaScript, HTML, side projects... Happy reading."
+  components: {
+    Article
+  },
+  computed: {
+    blogPage () {
+      return this.$store.state.content.blogPage
     }
   },
   asyncData ({ app }) {
     return app.$content('/').getAll()
     .then(res => {
       return {
-        posts: res
+        articles: res
       }
     })
     .catch(console.error)
   },
   head () {
     return {
-      title: this.meta.title,
+      title: this.blogPage.meta.title,
       meta: [
-        { hid: 'description', name: 'description', content: this.meta.description },
-        { hid: 'og:title', name: 'og:title', content: this.meta.title },
-        { hid: 'og:description', name: 'og:description', content: this.meta.description },
+        { hid: 'description', name: 'description', content: this.blogPage.meta.description },
+        { hid: 'og:title', name: 'og:title', content: this.blogPage.meta.title },
+        { hid: 'og:description', name: 'og:description', content: this.blogPage.meta.description },
         { hid: 'og:url', name: 'og:url', content: `https://quentin-bellanger.com${this.$nuxt.$route.path}` },
         { hid: 'og:type', name: 'og:type', content: 'website' },
-        { hid: 'twitter:title', name: 'twitter:title', content: this.meta.title }
+        { hid: 'twitter:title', name: 'twitter:title', content: this.blogPage.meta.title }
       ]
     }
-  },
-  components: {
-    Post
   }
 }
 </script>

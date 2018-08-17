@@ -16,7 +16,9 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.1",
+    "@nuxtjs/dotenv": "^1.1.1",
     "@nuxtjs/pwa": "2.0.8",
+    "contentful": "^7.0.0",
     "nuxt": "^1.4.1",
     "nuxt-sass-resources-loader": "^2.0.2",
     "nuxtent": "^1.4.1",
