@@ -3,7 +3,7 @@
     <h1>{{ blogPage.title }}</h1>
     <p>{{ blogPage.intro }}</p>
 
-    <Article v-for="(article, index) in blogPage.articles" :key="index" :article="article"></Article>
+    <Article v-for="(article, index) in articles" :key="index" :article="article"></Article>
 
   </section>
 </template>
@@ -18,16 +18,10 @@ export default {
   computed: {
     blogPage () {
       return this.$store.state.content.blogPage
+    },
+    articles () {
+      return this.$store.state.content.articles
     }
-  },
-  asyncData ({ app }) {
-    return app.$content('/').getAll()
-    .then(res => {
-      return {
-        articles: res
-      }
-    })
-    .catch(console.error)
   },
   head () {
     return {

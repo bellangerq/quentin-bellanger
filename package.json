@@ -10,7 +10,8 @@
     "start": "nuxt start",
     "compress": "imageOptim --directory assets/images",
     "generate": "nuxt generate",
-    "deploy": "surge dist/ https://quentin-bellanger.com",
+    "deploy:prod": "surge dist/ https://quentin-bellanger.com",
+    "deploy:dev": "surge dist/ https://quentin-bellanger.surge.sh",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint"
   },
@@ -21,7 +22,6 @@
     "contentful": "^7.0.0",
     "nuxt": "^1.4.1",
     "nuxt-sass-resources-loader": "^2.0.2",
-    "nuxtent": "^1.4.1",
     "prismjs": "^1.14.0"
   },
   "devDependencies": {

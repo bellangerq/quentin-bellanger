@@ -1,6 +1,6 @@
 <template lang="html">
   <article role="article">
-    <!-- <time :datetime="article.date">{{ formatDate(article.date) }}</time> -->
+    <time :datetime="article.date">{{ article.date }}</time>
     <nuxt-link :to="article.route">
       <h2>{{ article.title }}</h2>
     </nuxt-link>

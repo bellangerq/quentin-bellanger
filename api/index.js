@@ -3,6 +3,7 @@ import parseHomePage from './parsers/home-page'
 import parseWorkPage from './parsers/work-page'
 import parseBlogPage from './parsers/blog-page'
 import parseMeta from './parsers/meta'
+import parseArticle from './parsers/article'
 
 const contentful = createClient({
   space: process.env.contentful_space,
@@ -16,10 +17,14 @@ export default function (locale) {
     const workPage = parseWorkPage(find('workPage'))
     const blogPage = parseBlogPage(find('blogPage'))
 
+    const articlesEntries = entries.items.filter(e => e.sys.contentType.sys.id === 'article')
+    const articles = articlesEntries.map(parseArticle)
+
     return {
       homePage,
       workPage,
-      blogPage
+      blogPage,
+      articles
     }
   })
 }
