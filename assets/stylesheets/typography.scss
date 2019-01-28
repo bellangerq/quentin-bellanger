@@ -1,0 +1,90 @@
+h1 {
+  font-family: $font-sans;
+  font-size: 3rem;
+  font-weight: $weight-black;
+  line-height: 1.2;
+}
+
+h2 {
+  font-family: $font-sans;
+  font-size: 2rem;
+  font-weight: $weight-heavy;
+  line-height: 1.5;
+  margin: 2rem 0 1rem;
+}
+
+h3 {
+  font-family: $font-sans;
+  font-size: 1.3rem;
+  font-weight: $weight-heavy;
+  line-height: 1.5;
+  margin: 1.5rem 0 0.5rem;
+}
+
+p {
+  font-family: $font-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0 0 0 1rem;
+
+  li {
+    color: $color-black;
+    font-size: 1.2rem;
+    line-height: 1.5em;
+    margin: 0.5rem 0;
+    padding: 0 0 0 20px;
+    position: relative;
+
+    &::before {
+      background-color: currentColor;
+      border-radius: 50%;
+      content: '';
+      display: block;
+      height: 0.3125rem;
+      left: 0;
+      position: absolute;
+      top: 0.8rem;
+      width: 0.3125rem;
+    }
+  }
+}
+
+blockquote {
+  color: rgba($color-black, 0.8);
+  font-style: italic;
+  margin: 2rem 0;
+  position: relative;
+
+  &::before {
+    background: $color-main;
+    bottom: 0;
+    content: '';
+    left: -2rem;
+    position: absolute;
+    top: 0;
+    width: 0.5rem;
+  }
+}
+
+pre {
+  margin: 1rem 0;
+}
+
+code {
+  background: rgba($color-main, 0.05);
+  border-radius: 0.25rem;
+  font-family: monospace;
+  padding: 0.125rem 0.25rem;
+}
+
+abbr {
+  border-bottom: 0.125rem dotted $color-main;
+  box-sizing: border-box;
+  text-decoration: none;
+}

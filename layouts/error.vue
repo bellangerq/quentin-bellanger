@@ -1,42 +1,42 @@
-<template lang="html">
-  <div class="container">
-    <section>
-      <h1>{{ title }}</h1>
-      <p>{{ intro }}</p>
-      <nuxt-link to="/" class="cta" :title="button.title">{{ button.content }}</nuxt-link>
-    </section>
+<template>
+  <div>
+    <header>
+      <hyper-link href="/">Quentin Bellanger</hyper-link>
+      <h1>Oops! This page doesn't exist</h1>
+    </header>
+    <main>
+      <p>Hi</p>
+    </main>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['error'],
-  data() {
-    return {
-      meta: {
-        title: `Quentin Bellanger 🎈 | Error ${this.error.statusCode}`,
-        description: "The page you're looking for doesn't exist. Go back to the homepage."
-      },
-      title: `Error ${this.error.statusCode}`,
-      intro: "Oops! The page you're looking for doesn't exist. Go back to the homepage.",
-      button: {
-        content: "To the homepage",
-        title: "Go back to the homepage"
-      }
-    }
-  },
   head () {
     return {
-      title: this.meta.title,
+      title: 'Error page - Blog of Quentin Bellanger',
       meta: [
-        { hid: 'description', name: 'description', content: this.meta.description },
-        { hid: 'og:title', name: 'og:title', content: this.meta.title },
-        { hid: 'og:description', name: 'og:description', content: this.meta.description },
-        { hid: 'og:url', name: 'og:url', content: `https://quentin-bellanger.com${this.$nuxt.$route.path}` },
+        { hid: 'description', name: 'description', content: "description" },
+        { hid: 'og:title', name: 'og:title', content: "Error page - Blog of Quentin Bellanger" },
+        { hid: 'og:description', name: 'og:description', content: "description" },
         { hid: 'og:type', name: 'og:type', content: 'website' },
-        { hid: 'twitter:title', name: 'twitter:title', content: this.meta.title }
+        { hid: 'og:url', name: 'og:url', content: `https://quentin-bellanger.com${this.$nuxt.$route.path}` }
       ]
     }
   }
 }
 </script>
+
+<style lang="scss" scoped>
+header {
+  margin: 3rem 0 1rem;
+
+  a {
+    color: $color-main;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: $weight-black;
+    margin-bottom: 1.5rem;
+  }
+}
+</style>

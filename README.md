@@ -19,7 +19,3 @@ $ npm run generate
 # Publish it on Surge
 $ npm run deploy
 ```
-
-## To do
-
-- [ ] Edit content style (lists, paragraphs...)

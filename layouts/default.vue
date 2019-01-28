@@ -1,38 +1,15 @@
 <template lang="html">
-  <div class="container">
-    <a href="#content">Skip navigation</a>
-    <Header/>
+  <div>
     <main role="main">
-      <nuxt id="content"/>
+      <nuxt />
     </main>
-    <Footer/>
+    <footer-section />
   </div>
 </template>
 
 <script>
-import Header from '~/components/Header.vue'
-import Footer from '~/components/Footer.vue'
-
+import footerSection from '@/components/footer-section'
 export default {
-  components: {
-    Header,
-    Footer
-  }
+  components: { footerSection }
 }
 </script>
-
-<style lang="scss" scoped>
-.container > a {
-  background: $color-white;
-  left: -1000px;
-  padding: 20px;
-  position: absolute;
-  top: -1000px;
-  z-index: 1;
-
-  &:focus {
-    left: 10px;
-    top: 10px;
-  }
-}
-</style>
