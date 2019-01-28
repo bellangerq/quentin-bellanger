@@ -21,7 +21,7 @@ module.exports = {
   api: function(isStatic) {
     return {
       baseURL: 'http://localhost:3000',
-      browserBaseURL: isStatic ? 'https://quentin-bellanger.com' : ''
+      browserBaseURL: isStatic ? 'https://quentin-bellanger-2019.netlify.com/' : ''
     }
   }
 }
