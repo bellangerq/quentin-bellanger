@@ -26,8 +26,12 @@ article {
       margin: 1.5rem 0 0.5rem;
     }
 
-    p + * {
+    p + p {
       margin-top: 1rem;
+    }
+
+    li + li {
+      margin-top: 0.5rem;
     }
 
     a {
