@@ -18,6 +18,14 @@ article {
   padding: 3rem 0;
 
   /deep/ .body {
+    h2 {
+      margin: 2rem 0 1rem;
+    }
+
+    h3 {
+      margin: 1.5rem 0 0.5rem;
+    }
+
     p + * {
       margin-top: 1rem;
     }
