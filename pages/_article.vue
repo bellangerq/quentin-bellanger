@@ -23,10 +23,10 @@ export default {
   components: { hero, post },
   head () {
     return {
-      title: `${this.post.title} - Blog of Quentin Bellanger`,
+      title: `${this.post.title} - Quentin Bellanger`,
       meta: [
         { hid: 'description', name: 'description', content: this.post.description },
-        { hid: 'og:title', name: 'og:title', content: `${this.post.title} - Blog of Quentin Bellanger` },
+        { hid: 'og:title', name: 'og:title', content: `${this.post.title} - Quentin Bellanger` },
         { hid: 'og:description', name: 'og:description', content: this.post.description },
         { hid: 'og:type', name: 'og:type', content: 'article' },
         { hid: 'og:url', name: 'og:url', content: `https://quentin-bellanger.com${this.post.permalink}` }
