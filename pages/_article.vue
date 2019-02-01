@@ -25,11 +25,11 @@ export default {
     return {
       title: `${this.post.title} - Quentin Bellanger`,
       meta: [
-        { hid: 'description', name: 'description', content: this.post.description },
-        { hid: 'og:title', name: 'og:title', content: `${this.post.title} - Quentin Bellanger` },
-        { hid: 'og:description', name: 'og:description', content: this.post.description },
-        { hid: 'og:type', name: 'og:type', content: 'article' },
-        { hid: 'og:url', name: 'og:url', content: `https://quentin-bellanger.com${this.post.permalink}` }
+        { hid: 'description', property: 'description', name: 'description', content: this.post.description },
+        { hid: 'og:title', property: 'og:title', name: 'og:title', content: `${this.post.title} - Quentin Bellanger` },
+        { hid: 'og:description', property:'og:description', name: 'og:description', content: this.post.description },
+        { hid: 'og:type', property: 'og:type', name: 'og:type', content: 'article' },
+        { hid: 'og:url', property: 'og:url', name: 'og:url', content: `https://quentin-bellanger.com${this.post.permalink}` }
       ]
     }
   }

@@ -21,11 +21,11 @@ export default {
     return {
       title: 'Quentin Bellanger',
       meta: [
-        { hid: 'description', name: 'description', content: 'I am a front-end web developer focused on building accessible, inclusive and user-friendly websites.' },
-        { hid: 'og:title', name: 'og:title', content: 'Quentin Bellanger' },
-        { hid: 'og:description', name: 'og:description', content: 'I am a front-end web developer focused on building accessible, inclusive and user-friendly websites.' },
-        { hid: 'og:type', name: 'og:type', content: 'website' },
-        { hid: 'og:url', name: 'og:url', content: 'https://quentin-bellanger.com' }
+        { hid: 'description', property: 'description', name: 'description', content: 'I am a front-end web developer focused on building accessible, inclusive and user-friendly websites.' },
+        { hid: 'og:title', property: 'og:title', name: 'og:title', content: 'Quentin Bellanger' },
+        { hid: 'og:description', property: 'og:description', name: 'og:description', content: 'I am a front-end web developer focused on building accessible, inclusive and user-friendly websites.' },
+        { hid: 'og:type', property: 'og:type', name: 'og:type', content: 'website' },
+        { hid: 'og:url', property: 'og:url', name: 'og:url', content: 'https://quentin-bellanger.com' }
       ]
     }
   }

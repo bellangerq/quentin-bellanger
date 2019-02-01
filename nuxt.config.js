@@ -6,8 +6,8 @@ module.exports = {
       { name: 'theme-color', content: '#c2185b' },
 
       // Facebook
-      { name: 'og:site_name', content: 'Quentin Bellanger' },
-      { name: 'og:image', content: '/og.png' },
+      { property: 'og:site_name', name: 'og:site_name', content: 'Quentin Bellanger' },
+      { property: 'og:image', name: 'og:image', content: '/og.png' },
 
       // Twitter
       { name: 'twitter:card', content: 'summary_large_image' },
