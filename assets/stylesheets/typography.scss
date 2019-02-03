@@ -57,7 +57,7 @@ blockquote {
   position: relative;
 
   &::before {
-    background: $color-main;
+    background: linear-gradient(rgba($color-main, 0.3), rgba($color-main, 0.1));;
     bottom: 0;
     content: '';
     left: -2rem;
@@ -72,7 +72,7 @@ pre {
 }
 
 code {
-  background: rgba($color-main, 0.1);
+  background: linear-gradient(320deg, rgba($color-main, 0.3), rgba($color-main, 0.1));
   border-radius: 0.25rem;
   font-family: monospace;
   padding: 0.125rem 0.25rem;
