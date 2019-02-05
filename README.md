@@ -1,12 +1,10 @@
 # Quentin Bellanger
 
-My personal website: https://quentin-bellanger.com.
-
-![Quentin Bellanger's website](/static/og.png)
+<img src="/static/icon.png" width="20"> My personal website: https://quentin-bellanger.com.
 
 ## Development
 
-``` bash
+``` sh
 # Install dependencies
 $ npm install
 
