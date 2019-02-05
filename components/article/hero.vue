@@ -24,6 +24,11 @@ header {
     font-size: 1.5rem;
     font-weight: $weight-black;
     margin-bottom: 1.5rem;
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: rgba($color-main, 0.3);
+    }
   }
 
   time {
