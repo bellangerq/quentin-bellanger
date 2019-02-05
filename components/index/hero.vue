@@ -24,7 +24,7 @@ header {
 
     a {
       display: flex;
-      margin-right: 2rem;
+      margin: 1rem 2rem 1rem 0;
     }
 
     img {
