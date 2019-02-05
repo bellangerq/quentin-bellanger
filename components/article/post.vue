@@ -30,10 +30,6 @@ article {
       margin-top: 1rem;
     }
 
-    li + li {
-      margin-top: 0.5rem;
-    }
-
     a {
       color: $color-main;
       transition: color 0.2s ease-in-out;
