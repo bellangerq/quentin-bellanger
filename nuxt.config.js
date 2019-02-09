@@ -8,6 +8,8 @@ module.exports = {
       // Facebook
       { property: 'og:site_name', name: 'og:site_name', content: 'Quentin Bellanger' },
       { property: 'og:image', name: 'og:image', content: '/og.png' },
+      { property: 'og:image:width', name: 'og:image:width', content: '1200' },
+      { property: 'og:image:height', name: 'og:image:height', content: '630' },
 
       // Twitter
       { name: 'twitter:card', content: 'summary_large_image' },
