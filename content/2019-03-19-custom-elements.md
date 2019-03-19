@@ -35,12 +35,11 @@ constructor() {
   this.label = this.getAttribute('label') || 'Email'
   this.type = 'email'
   this.placeholder = this.getAttribute('placeholder') || ''
-  this.required = this.getAttribute('required') || false
 
   this.innerHTML = `
     <form>
       <label for="${this.name}">${this.label}</label>
-      <input type="${this.type}" required="${this.required}" id="${this.name}" placeholder="${this.placeholder}">
+      <input type="${this.type}" required aria-required="true" id="${this.name}" placeholder="${this.placeholder}">
       <input type="submit" value="Subscribe" />
     </form>
     <div role="alert" hidden class="success">
