@@ -31,9 +31,8 @@ strong {
 
 ul,
 ol {
-  list-style: none;
   margin: 1rem 0 1rem 1rem;
-  padding: 0 0 0 1rem;
+  padding: 0;
 
   li {
     color: $color-black;
@@ -52,6 +51,18 @@ ol {
       top: 0.8rem;
       width: 0.3125rem;
     }
+
+    & + li {
+      margin-top: 1rem;
+    }
+  }
+}
+
+ol {
+  list-style: decimal;
+
+  li:before {
+    display: none
   }
 }
 
@@ -90,4 +101,12 @@ abbr {
   border-bottom: 0.125rem dotted $color-main;
   box-sizing: border-box;
   text-decoration: none;
+}
+
+kbd {
+  background: rgba($color-black, 0.1);
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 1px rgba($color-black, 0.2);
+  font-family: monospace;
+  padding: 0.125rem 0.25rem;
 }
