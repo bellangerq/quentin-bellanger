@@ -18,3 +18,24 @@ npm run generate
 ## Deployment
 
 The site is hosted on [Netlify](https://netlify.com) and is deployed every time a commit is pushed on `master` branch.
+
+## Todo
+
+### RSS feed
+
+- ...
+
+### Theme switcher
+
+- Switch everything CSS variables
+- Create the switcher component
+- Create CSS variables with shades
+- Toggle attribute on body on switch
+- Store in `localStorage` user preference
+- Apply dark/light mode on media query
+
+### Tags
+
+- Add tags to posts
+- Show tags on home and article page
+- Create a page for each tag

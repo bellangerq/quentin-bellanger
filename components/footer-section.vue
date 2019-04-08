@@ -31,7 +31,7 @@ footer {
       }
 
       & + li {
-        margin-left: 1rem;
+        margin: 0 0 0 1rem;
 
         &::before {
           display: block;
