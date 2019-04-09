@@ -1,9 +1,8 @@
 <template>
-  <header>
-    <hyper-link href="/">Quentin Bellanger</hyper-link>
+  <div class="hero">
     <h1>{{ title }}</h1>
     <time :datetime="date">{{ formatDate(date) }}</time>
-  </header>
+  </div class="hero">
 </template>
 
 <script>
@@ -15,21 +14,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-header {
-  margin: 3rem 0 1rem;
-
-  a {
-    color: var(--color-main-base);
-    display: inline-block;
-    font-size: 1.5rem;
-    font-weight: var(--weight-black);
-    margin-bottom: 1.5rem;
-    transition: color 0.2s ease-in-out;
-
-    &:hover {
-      color: var(--color-main-light);
-    }
-  }
+.hero {
+  margin-bottom: 1rem;
 
   time {
     display: block;

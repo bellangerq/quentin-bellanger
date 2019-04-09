@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer role="contentinfo">
     <ul>
       <li><hyper-link href="https://twitter.com/bellanger_q">Twitter</hyper-link></li>
       <li><hyper-link href="https://github.com/bellangerq">GitHub</hyper-link></li>
@@ -19,8 +19,6 @@ footer {
 
   ul {
     display: flex;
-    margin: 0;
-    padding: 0;
 
     li {
       font-size: 1rem;

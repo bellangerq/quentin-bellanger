@@ -31,11 +31,9 @@ strong {
 
 ul,
 ol {
-  margin: 1rem 0 1rem 1rem;
   padding: 0;
 
   li {
-    color: var(--color-black);
     font-size: 1.2rem;
     line-height: 1.5em;
     position: relative;
@@ -50,10 +48,6 @@ ol {
       position: absolute;
       top: 0.8rem;
       width: 0.3125rem;
-    }
-
-    & + li {
-      margin-top: 1rem;
     }
   }
 }
@@ -93,6 +87,7 @@ pre {
 code {
   background: linear-gradient(320deg, var(--color-main-light), var(--color-main-extralight));
   border-radius: 0.25rem;
+  color: var(--color-black);
   font-family: monospace;
   padding: 0.125rem 0.25rem;
 }
@@ -107,6 +102,7 @@ kbd {
   background: var(--color-gray-extralight);
   border-radius: 0.25rem;
   box-shadow: 0 2px 2px var(--color-gray-light);
+  color: var(--color-black);
   font-family: monospace;
   padding: 0.125rem 0.25rem;
 }

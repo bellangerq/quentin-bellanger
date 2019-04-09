@@ -2,23 +2,28 @@
 @import 'vars';
 @import 'typography';
 
-html {
+body {
   font-family: var(--font-serif);
+  margin: 0 auto;
+  max-width: 40rem;
+  padding: 0 1rem;
+  transition: background 0.5s ease-out, color 0.5s ease-out;
 
-  body {
+  &[data-theme="light"] {
+    background: var(--color-white);
     color: var(--color-black);
-    margin: 0 auto;
-    max-width: 40rem;
-    padding: 0 1rem;
   }
 
-  *:focus {
-    outline: 0.25rem solid var(--color-main-dark);
-  }
-
-  *::selection {
+  &[data-theme="dark"] {
+    --color-main-base: var(--color-main-light);
+    --color-main-extralight: var(--color-white);
     background: var(--color-black);
     color: var(--color-white);
+
+    *::selection {
+      background: var(--color-white);
+      color: var(--color-black);
+    }
   }
 
   &::-webkit-scrollbar {
@@ -32,4 +37,22 @@ html {
   &::-webkit-scrollbar-track {
       background: var(--color-main-extralight);
   }
+
+  *:focus {
+    outline: 0.25rem solid var(--color-main-base);
+  }
+
+  *::selection {
+    background: var(--color-black);
+    color: var(--color-white);
+  }
+}
+
+.visually-hidden {
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
 }

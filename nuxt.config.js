@@ -1,5 +1,8 @@
 module.exports = {
   head: {
+    bodyAttrs: {
+      'data-theme': 'light'
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -48,5 +51,12 @@ module.exports = {
   plugins: [
     { src: '~plugins/ga', ssr: false },
     { src: '~plugins/hyper-link', ssr: true }
-  ]
+  ],
+  build: {
+    postcss: {
+      plugins: {
+        'postcss-custom-properties': false
+      }
+    }
+  }
 }

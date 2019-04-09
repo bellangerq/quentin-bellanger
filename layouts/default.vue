@@ -1,5 +1,6 @@
 <template lang="html">
   <div>
+    <header-section />
     <main role="main">
       <nuxt />
     </main>
@@ -8,8 +9,9 @@
 </template>
 
 <script>
+import headerSection from '@/components/header-section'
 import footerSection from '@/components/footer-section'
 export default {
-  components: { footerSection }
+  components: { headerSection, footerSection }
 }
 </script>

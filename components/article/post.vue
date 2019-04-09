@@ -39,6 +39,14 @@ article {
       }
     }
 
+    ul, ol {
+      margin: 1rem 0 1rem 1rem;
+
+      li + li {
+        margin-top: 1rem;
+      }
+    }
+
     pre {
       margin: 1.5rem 0;
     }
