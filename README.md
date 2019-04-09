@@ -27,7 +27,6 @@ The site is hosted on [Netlify](https://netlify.com) and is deployed every time 
 
 ### Theme switcher
 
-- Switch everything CSS variables
 - Create the switcher component
 - Create CSS variables with shades
 - Toggle attribute on body on switch

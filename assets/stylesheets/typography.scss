@@ -1,26 +1,26 @@
 h1 {
-  font-family: $font-sans;
+  font-family: var(--font-sans);
   font-size: 3rem;
-  font-weight: $weight-black;
+  font-weight: var(--weight-black);
   line-height: 1.2;
 }
 
 h2 {
-  font-family: $font-sans;
+  font-family: var(--font-sans);
   font-size: 2rem;
-  font-weight: $weight-heavy;
+  font-weight: var(--weight-heavy);
   line-height: 1.5;
 }
 
 h3 {
-  font-family: $font-sans;
+  font-family: var(--font-sans);
   font-size: 1.3rem;
-  font-weight: $weight-heavy;
+  font-weight: var(--weight-heavy);
   line-height: 1.5;
 }
 
 p {
-  font-family: $font-serif;
+  font-family: var(--font-serif);
   font-size: 1.2rem;
   line-height: 1.5;
 }
@@ -35,7 +35,7 @@ ol {
   padding: 0;
 
   li {
-    color: $color-black;
+    color: var(--color-black);
     font-size: 1.2rem;
     line-height: 1.5em;
     position: relative;
@@ -72,7 +72,7 @@ blockquote {
   position: relative;
 
   &::before {
-    background: linear-gradient(rgba($color-main, 0.3), rgba($color-main, 0.1));;
+    background: linear-gradient(var(--color-main-light), var(--color-main-extralight));
     bottom: 0;
     content: '';
     left: -2rem;
@@ -91,22 +91,22 @@ pre {
 }
 
 code {
-  background: linear-gradient(320deg, rgba($color-main, 0.3), rgba($color-main, 0.1));
+  background: linear-gradient(320deg, var(--color-main-light), var(--color-main-extralight));
   border-radius: 0.25rem;
   font-family: monospace;
   padding: 0.125rem 0.25rem;
 }
 
 abbr {
-  border-bottom: 0.125rem dotted $color-main;
+  border-bottom: 0.125rem dotted var(--color-main-base);
   box-sizing: border-box;
   text-decoration: none;
 }
 
 kbd {
-  background: rgba($color-black, 0.1);
+  background: var(--color-gray-extralight);
   border-radius: 0.25rem;
-  box-shadow: 0 2px 2px rgba($color-black, 0.3);
+  box-shadow: 0 2px 2px var(--color-gray-light);
   font-family: monospace;
   padding: 0.125rem 0.25rem;
 }

@@ -19,15 +19,15 @@ header {
   margin: 3rem 0 1rem;
 
   a {
-    color: $color-main;
+    color: var(--color-main-base);
     display: inline-block;
     font-size: 1.5rem;
-    font-weight: $weight-black;
+    font-weight: var(--weight-black);
     margin-bottom: 1.5rem;
     transition: color 0.2s ease-in-out;
 
     &:hover {
-      color: rgba($color-main, 0.3);
+      color: var(--color-main-light);
     }
   }
 

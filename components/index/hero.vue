@@ -29,7 +29,7 @@ header {
 
     img {
       border-radius: 50%;
-      background: $color-main;
+      background: var(--color-main-base);
       height: 3rem;
       width: 3rem;
     }
@@ -37,7 +37,7 @@ header {
 
   p {
     a {
-      color: $color-main;
+      color: var(--color-main-base);
 
       &:hover {
         text-decoration: underline;

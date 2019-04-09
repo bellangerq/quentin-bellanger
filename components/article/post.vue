@@ -12,8 +12,8 @@ export default {
 
 <style lang="scss" scoped>
 article {
-  border-bottom: 0.25rem solid rgba($color-black, 0.05);
-  border-top: 0.25rem solid rgba($color-black, 0.05);
+  border-bottom: 0.25rem solid var(--color-gray-extralight);
+  border-top: 0.25rem solid var(--color-gray-extralight);
   margin-top: 3rem;
   padding: 3rem 0;
 
@@ -31,7 +31,7 @@ article {
     }
 
     a {
-      color: $color-main;
+      color: var(--color-main-base);
       transition: color 0.2s ease-in-out;
 
       &:hover {

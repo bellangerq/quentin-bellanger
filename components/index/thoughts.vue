@@ -20,8 +20,8 @@ export default {
 
 <style lang="scss" scoped>
 section {
-  border-bottom: 0.25rem solid rgba($color-black, 0.05);
-  border-top: 0.25rem solid rgba($color-black, 0.05);
+  border-bottom: 0.25rem solid var(--color-gray-extralight);
+  border-top: 0.25rem solid var(--color-gray-extralight);
   margin: 3rem auto 0;
   max-width: 47rem;
   padding: 3rem 0;
@@ -32,7 +32,7 @@ section {
     }
 
     h2 {
-      color: $color-main;
+      color: var(--color-main-base);
       margin-bottom: 0;
 
       a:hover {

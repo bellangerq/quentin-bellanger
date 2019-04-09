@@ -46,7 +46,7 @@ footer {
   }
 
   a {
-    color: $color-main;
+    color: var(--color-main-base);
     text-decoration: none;
 
     &:hover {

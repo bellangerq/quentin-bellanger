@@ -3,22 +3,22 @@
 @import 'typography';
 
 html {
-  font-family: $font-serif;
+  font-family: var(--font-serif);
 
   body {
-    color: $color-black;
+    color: var(--color-black);
     margin: 0 auto;
     max-width: 40rem;
     padding: 0 1rem;
   }
 
   *:focus {
-    outline: 0.25rem solid rgba($color-main, 0.5);
+    outline: 0.25rem solid var(--color-main-dark);
   }
 
-  &::selection {
-    background: $color-black;
-    color: $color-white;
+  *::selection {
+    background: var(--color-black);
+    color: var(--color-white);
   }
 
   &::-webkit-scrollbar {
@@ -26,10 +26,10 @@ html {
   }
 
   &::-webkit-scrollbar-thumb {
-      background: $color-main;
+      background: var(--color-main-base);
   }
 
   &::-webkit-scrollbar-track {
-      background: rgba($color-main, 0.1);
+      background: var(--color-main-extralight);
   }
 }
