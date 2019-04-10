@@ -27,10 +27,6 @@ The site is hosted on [Netlify](https://netlify.com) and is deployed every time 
 
 ### Theme switcher
 
-- Create the switcher component
-- Create CSS variables with shades
-- Toggle attribute on body on switch
-- Store in `localStorage` user preference
 - Apply dark/light mode on media query
 
 ### Tags

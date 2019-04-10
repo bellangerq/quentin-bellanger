@@ -9,17 +9,21 @@
 export default {
   data() {
     return {
-      darkTheme: false
+      darkTheme: process.browser ? localStorage.getItem('dark-theme') || false : false
     }
+  },
+
+  mounted() {
+    const site = document.querySelector('#site')
+    site.setAttribute('data-theme', this.darkTheme ? 'dark' : 'light')
   },
 
   methods: {
     toggleTheme() {
-      const body = document.querySelector('body')
-      const theme = body.getAttribute('data-theme')
-      theme === 'light'
-        ? body.setAttribute('data-theme', 'dark')
-        : body.setAttribute('data-theme', 'light')
+      this.darkTheme = !this.darkTheme
+      const site = document.querySelector('#site')
+      site.setAttribute('data-theme', this.darkTheme ? 'dark' : 'light')
+      localStorage.setItem('dark-theme', this.darkTheme)
     }
   }
 }

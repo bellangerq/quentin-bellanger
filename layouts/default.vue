@@ -1,5 +1,5 @@
 <template lang="html">
-  <div>
+  <div id="site">
     <header-section />
     <main role="main">
       <nuxt />

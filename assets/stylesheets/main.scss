@@ -2,10 +2,8 @@
 @import 'vars';
 @import 'typography';
 
-body {
+#site {
   font-family: var(--font-serif);
-  margin: 0 auto;
-  max-width: 40rem;
   padding: 0 1rem;
   transition: background 0.5s ease-out, color 0.5s ease-out;
 
@@ -45,6 +43,11 @@ body {
   *::selection {
     background: var(--color-black);
     color: var(--color-white);
+  }
+
+  > * {
+    margin: 0 auto;
+    max-width: 40rem;
   }
 }
 
