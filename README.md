@@ -21,23 +21,14 @@ The site is hosted on [Netlify](https://netlify.com) and is deployed every time 
 
 ## Todo
 
-### Fixes
-- Inline code style (https://www.contentful.com/blog/2019/04/05/nuxtjs-contentful-seo-blog/)
+### Features
+
 - Style theme switcher
+- Inline code style (https://www.contentful.com/blog/2019/04/05/nuxtjs-contentful-seo-blog/)
 - Update code blocks theme
+- Add something to illustrate error page
+- RSS feed
+- About page
 
-### RSS feed
-
-- ...
-
-### About page
-
-### Error page
-
-- Add something to illustrate (gif, video...)
-
-### Tags
-
-- Add tags to posts
-- Show tags on home and article page
-- Create a page for each tag
+### Fixes
+- Theme switcher
