@@ -80,14 +80,16 @@ pre {
   margin: 1rem 0;
 
   code {
+    border: 0;
     padding: 0;
   }
 }
 
 code {
-  background: linear-gradient(320deg, var(--color-main-light), var(--color-main-extralight));
+  background: var(--color-gray-extralight);
   border-radius: 0.25rem;
-  color: var(--color-black);
+  border: 1px solid var(--color-gray-light);
+  color: var(--color-main-base);
   font-family: monospace;
   padding: 0.125rem 0.25rem;
 }
