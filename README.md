@@ -24,7 +24,6 @@ The site is hosted on [Netlify](https://netlify.com) and is deployed every time 
 ### Features
 
 - Style theme switcher
-- Inline code style (https://www.contentful.com/blog/2019/04/05/nuxtjs-contentful-seo-blog/)
 - Update code blocks theme
 - Add something to illustrate error page
 - RSS feed
