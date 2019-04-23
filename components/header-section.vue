@@ -6,7 +6,7 @@
         <!-- <li><hyper-link href="/about">About</hyper-link></li> -->
       </ul>
     </nav>
-    <theme-switcher />
+    <!-- <theme-switcher /> -->
   </header>
 
 </template>
