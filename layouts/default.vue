@@ -1,10 +1,12 @@
 <template lang="html">
   <div id="site">
-    <header-section />
-    <main role="main">
-      <nuxt />
-    </main>
-    <footer-section />
+    <div class="container">
+      <header-section />
+      <main role="main">
+        <nuxt />
+      </main>
+      <footer-section />
+    </div>
   </div>
 </template>
 

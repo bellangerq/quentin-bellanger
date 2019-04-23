@@ -15,7 +15,7 @@ export default {}
 
 <style lang="scss" scoped>
 footer {
-  margin: 3rem 0;
+  padding: 3rem 0;
 
   ul {
     display: flex;

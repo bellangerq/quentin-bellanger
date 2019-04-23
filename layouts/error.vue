@@ -1,16 +1,13 @@
 <template>
   <div>
-    <header>
-      <hyper-link href="/">Quentin Bellanger</hyper-link>
-      <h1>Oops! This page doesn't exist</h1>
-    </header>
-    <main>
-      <p>Sorry for the inconvenience, please go back to the <hyper-link href="/">homepage</hyper-link>.</p>
-    </main>
+    <hero />
+    <lost />
   </div>
 </template>
 
 <script>
+import hero from '@/components/error/hero'
+import lost from '@/components/error/lost'
 export default {
   head () {
     return {
@@ -23,37 +20,20 @@ export default {
         { hid: 'og:url', name: 'og:url', content: `https://quentin-bellanger.com${this.$nuxt.$route.path}` }
       ]
     }
-  }
+  },
+
+  components: { hero, lost }
 }
 </script>
 
 <style lang="scss" scoped>
-header {
-  margin: 3rem 0 1rem;
-
+p {
   a {
     color: var(--color-main-base);
-    display: inline-block;
-    font-size: 1.5rem;
-    font-weight: var(--weight-black);
-    margin-bottom: 1.5rem;
     transition: color 0.2s ease-in-out;
 
     &:hover {
-      color: var(--color-main-light);
-    }
-  }
-}
-
-main {
-  p {
-    a {
-      color: var(--color-main-base);
-      transition: color 0.2s ease-in-out;
-
-      &:hover {
-        text-decoration: underline;
-      }
+      text-decoration: underline;
     }
   }
 }

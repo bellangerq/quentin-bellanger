@@ -40,6 +40,10 @@ export default {
     border: 0.25rem solid var(--color-black);
     border-radius: 0.25rem;
     padding: 0.25rem;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
