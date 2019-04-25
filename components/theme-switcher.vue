@@ -9,11 +9,14 @@
 export default {
   data() {
     return {
-      darkTheme: process.browser ? localStorage.getItem('dark-theme') || false : false
+      darkTheme: process.browser ? localStorage.getItem('dark-theme') : false
     }
   },
 
   mounted() {
+    if (process.browser) {
+      this.darkTheme = localStorage.getItem('dark-theme') ? 'dark' : 'light'
+    }
     const site = document.querySelector('#site')
     site.setAttribute('data-theme', this.darkTheme ? 'dark' : 'light')
   },
@@ -24,6 +27,7 @@ export default {
       const site = document.querySelector('#site')
       site.setAttribute('data-theme', this.darkTheme ? 'dark' : 'light')
       localStorage.setItem('dark-theme', this.darkTheme)
+      console.log(process.browser ? localStorage.getItem('dark-theme') : 'localStorage doesnt exist')
     }
   }
 }

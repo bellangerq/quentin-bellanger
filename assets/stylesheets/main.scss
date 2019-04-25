@@ -1,6 +1,7 @@
 @import 'reset';
 @import 'vars';
 @import 'typography';
+@import 'transitions';
 
 #site {
   font-family: var(--font-serif);
@@ -29,11 +30,11 @@
   }
 
   &::-webkit-scrollbar-thumb {
-      background: var(--color-main-base);
+    background: var(--color-main-base);
   }
 
   &::-webkit-scrollbar-track {
-      background: var(--color-main-extralight);
+    background: var(--color-main-extralight);
   }
 
   *:focus {
@@ -52,10 +53,10 @@
 }
 
 .visually-hidden {
-    clip: rect(1px 1px 1px 1px);
-    clip: rect(1px, 1px, 1px, 1px);
-    height: 1px;
-    overflow: hidden;
-    position: absolute !important;
-    width: 1px;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
 }

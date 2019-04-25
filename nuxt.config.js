@@ -19,8 +19,7 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
     ]
   },
-  loading: { color: '#c2185b' },
-
+  loading: false,
   css: [
     { src: '@/assets/stylesheets/main.scss', lang: 'scss'},
     { src: '@/assets/stylesheets/prism.css', lang: 'css'}
