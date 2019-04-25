@@ -1,7 +1,7 @@
 <template lang="html">
   <div class="switcher">
     <input class="visually-hidden" type="checkbox" id="theme" @input="toggleTheme" name="theme" v-model="darkTheme" :checked="darkTheme">
-    <label for="theme">Apply {{ darkTheme ? 'light' : 'dark' }} theme</label>
+    <label for="theme" :aria-label="`Apply ${darkTheme ? 'light' : 'dark' } theme`"></label>
   </div>
 </template>
 
@@ -39,19 +39,54 @@ export default {
     outline: 0.25rem solid var(--color-main-base);
   }
 
+  input:checked + label {
+    transform: rotate(180deg);
+  }
+
   label {
-    background: inherit;
-    border: 0.25rem solid var(--color-black);
-    border-radius: 0.25rem;
-    padding: 0.25rem;
+    --size: 1.5rem;
+    background: var(--color-black);
+    border: 4px solid var(--color-black);
+    border-radius: 50%;
+    display: block;
+    height: var(--size);
+    position: relative;
+    transition: transform 0.5s ease-out;
+    width: var(--size);
 
     &:hover {
       cursor: pointer;
+    }
+
+    &::before {
+      background: var(--color-white);
+      border-radius: 50%;
+      content: '';
+      display: block;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+
+    &::after {
+      background: var(--color-black);
+      border-radius: 0 var(--size) var(--size) 0;
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transition: transform 0.2s;
+      width: calc(var(--size) / 2);
     }
   }
 }
 
 [data-theme="dark"] .switcher label {
+  background: var(--color-white);
   border-color: var(--color-white);
 }
 </style>
