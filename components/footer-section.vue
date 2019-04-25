@@ -1,4 +1,4 @@
-<template>
+<template lang="html">
   <footer role="contentinfo">
     <ul>
       <li><hyper-link href="https://twitter.com/bellanger_q">Twitter</hyper-link></li>

@@ -1,4 +1,4 @@
-<template>
+<template lang="html">
   <article>
     <div v-html="post.body" class="body" />
   </article>

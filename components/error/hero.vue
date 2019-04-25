@@ -1,4 +1,4 @@
-<template>
+<template lang="html">
   <div class="hero">
     <h1>Oops! This page doesn't exist</h1>
   </div>

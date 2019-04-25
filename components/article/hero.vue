@@ -1,4 +1,4 @@
-<template>
+<template lang="html">
   <div class="hero">
     <h1>{{ title }}</h1>
     <time :datetime="date">{{ formatDate(date) }}</time>

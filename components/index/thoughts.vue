@@ -1,4 +1,4 @@
-<template>
+<template lang="html">
   <section>
     <article v-for="post in posts" :key="post.title">
       <h2>

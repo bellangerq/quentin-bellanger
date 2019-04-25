@@ -1,4 +1,4 @@
-<template>
+<template lang="html">
   <div class="lost">
     <p>Sorry for the inconvenience, please go back to the <hyper-link href="/">homepage</hyper-link>.</p>
   </div>

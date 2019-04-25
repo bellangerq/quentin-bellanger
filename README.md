@@ -21,13 +21,19 @@ The site is hosted on [Netlify](https://netlify.com) and is deployed every time 
 
 ## Todo
 
+### Post ideas
+
+- Accessible tweets (avoid :clap: tweets, provide gist for code images, add alt text to images...).
+
 ### Features
 
+- Page transitions
 - Style theme switcher
 - Update code blocks theme
 - Add something to illustrate error page
-- RSS feed
 - About page
+- RSS feed
 
 ### Fixes
+- Meta image
 - Theme switcher
