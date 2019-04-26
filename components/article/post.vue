@@ -6,7 +6,28 @@
 
 <script>
 export default {
-  props: ['post']
+  props: ['post'],
+
+  mounted() {
+    const titles = this.$el.querySelectorAll('h2, h3')
+    this.generateAnchorLinks(titles)
+  },
+
+  methods: {
+    slugify(str) {
+      return str
+        .toLowerCase()
+        .replace(/\s/g, '-')
+        .replace(/[^0-9a-z.-]/g, '')
+    },
+    generateAnchorLinks(titles) {
+      titles.forEach(t => {
+        const slug = this.slugify(t.innerText)
+        t.insertAdjacentHTML('beforeend', `<a href="#${slug}" class="anchor">#</a>`)
+        t.setAttribute('id', slug)
+      })
+    }
+  }
 }
 </script>
 
@@ -36,6 +57,10 @@ article {
 
       &:hover {
         text-decoration: underline;
+      }
+
+      &.anchor {
+        margin-left: 0.5rem;
       }
     }
 
