@@ -63,13 +63,14 @@ ol {
 blockquote {
   font-style: italic;
   margin: 2rem 0;
+  padding-left: 2rem;
   position: relative;
 
   &::before {
     background: linear-gradient(var(--color-main-light), var(--color-main-extralight));
     bottom: 0;
     content: '';
-    left: -2rem;
+    left: 0;
     position: absolute;
     top: 0;
     width: 0.5rem;
