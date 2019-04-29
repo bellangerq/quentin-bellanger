@@ -1,7 +1,5 @@
 <template lang="html">
-  <article>
-    <div v-html="post.body" class="body" />
-  </article>
+  <article v-html="post.body" />
 </template>
 
 <script>
@@ -38,7 +36,12 @@ article {
   margin-top: 3rem;
   padding: 3rem 0;
 
-  /deep/ .body {
+  /deep/ {
+    h2:hover a,
+    h2:focus a {
+      opacity: 1;
+    }
+
     h2 {
       margin: 2rem 0 1rem;
     }
@@ -61,6 +64,12 @@ article {
 
       &.anchor {
         margin-left: 0.5rem;
+        opacity: 0;
+        transition: opacity 0.2s;
+
+        &:focus {
+          opacity: 1;
+        }
       }
     }
 
