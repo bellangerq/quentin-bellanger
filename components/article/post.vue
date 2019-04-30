@@ -7,8 +7,8 @@ export default {
   props: ['post'],
 
   mounted() {
-    const titles = this.$el.querySelectorAll('h2, h3')
-    this.generateAnchorLinks(titles)
+    const headings = this.$el.querySelectorAll('h2, h3')
+    this.generateAnchorLinks(headings)    
   },
 
   methods: {
@@ -18,11 +18,11 @@ export default {
         .replace(/\s/g, '-')
         .replace(/[^0-9a-z.-]/g, '')
     },
-    generateAnchorLinks(titles) {
-      titles.forEach(t => {
-        const slug = this.slugify(t.innerText)
-        t.insertAdjacentHTML('beforeend', `<a href="#${slug}" class="anchor">#</a>`)
-        t.setAttribute('id', slug)
+    generateAnchorLinks(headings) {
+      headings.forEach(h => {
+        const slug = this.slugify(h.innerText)
+        h.insertAdjacentHTML('beforeend', `<a href="#${slug}" class="anchor">#</a>`)
+        h.setAttribute('id', slug)
       })
     }
   }
@@ -38,7 +38,9 @@ article {
 
   /deep/ {
     h2:hover a,
-    h2:focus a {
+    h2:focus a,
+    h3:hover a,
+    h3:focus a {
       opacity: 1;
     }
 
