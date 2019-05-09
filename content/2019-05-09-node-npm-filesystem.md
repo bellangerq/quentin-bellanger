@@ -34,7 +34,7 @@ I start by creating a `scripts` folder with a  `add-post.js` file. Then I requir
 const fs = require('fs')
 ```
 
-The `fs` module comes with a handy `writeFileSync` function that allows you to create a file in a folder and to fill it with default content. It takes two arguments: the file path and the content inside the file. We create a `generatePost()` function that takes two parameters, a slug and a date, to build the path string.
+The [`fs` module](https://nodejs.org/api/fs.html) comes with a handy `writeFileSync` function that allows you to create a file in a folder and to fill it with default content. It takes two arguments: the file path and the content inside the file. We create a `generatePost()` function that takes two parameters, a slug and a date, to build the path string.
 
 ```javascript
 function generatePost(slug, date) {
